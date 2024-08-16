@@ -1,0 +1,19 @@
+
+.navbar-toggler-icon {
+  background-image: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.navbar-custom {
+  background-color: red;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: white;
+}
