@@ -14,8 +14,9 @@
   border-color: white;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #fdfdfd; /* ヘッダーのリンクにホバーしたときの文字色 */
+.nav-link:hover {
+  background-color: #cd9898; /* ヘッダーのリンクにホバーしたときの文字色 */
+  color:white;
 }
 
 .navbar-toggler-icon {
