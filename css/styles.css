@@ -22,3 +22,81 @@
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+/* アクセスmap用画像切り替え */
+.svg-container {
+  position: relative; /* SVG内のクリック可能エリアを適切に配置するため */
+}
+
+.modal-button {
+  cursor: pointer; /* ポインタカーソルにする */
+  fill: none; /* 背景を透明にする */
+  stroke: #000; /* 外枠の色 */
+  stroke-width: 2; /* 外枠の幅 */
+  transition: fill 0.3s ease; /* 色の遷移 */
+}
+
+.modal-button:hover {
+  fill: rgba(0, 0, 255, 0.2); /* ホバー時の背景色 */
+}
+
+
+/* 過去サイトがまとめられているnotionに飛ぶためのボタンです */
+
+.site-button {
+  /* margin-top: 3rem; */
+  display: inline-block;
+  border-radius: 60px;
+  font-size: 18pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: #f55050;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .2s;
+  box-shadow: 4px 4px 6px #50f5f5;
+  border: 2px solid #f55050;
+  text-decoration: none;
+}
+
+.site-button:hover {
+  background-color: #50f5f5; /* ホバー時に色が濃くなる */
+  color: #1b0a0a;
+}
+
+.site-button svg {
+  margin-left: 8px; /* テキストとアイコンの間隔 */
+  fill: currentColor; /* アイコンの色を親要素の色に合わせる */
+  width: 1.2em; /* アイコンのサイズ */
+  height: 1.2em; /* アイコンのサイズ */
+}
+
+/* 中央ぞろえにするやつ */
+
+.archive {
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+/* タイトル関係　仮で作ったものなのでデザインとかは変更しちゃってください */
+
+.title-frame {
+  border: 3px solid #f55050;
+  border-radius: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title {
+  font-size: 50px;
+  font-family: "バナナフォント";
+  color: #f55050;
+  margin-left: auto;
+  margin-right: auto;
+}
