@@ -100,3 +100,22 @@
   margin-left: auto;
   margin-right: auto;
 }
+#countdown {
+  font-size: 2rem;
+  margin-top: 20px;
+  display: inline;
+}
+.prefix {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+.days {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #dc3545; /* Bootstrapの危険（赤色）の色を使用 */
+  vertical-align: middle;
+}
+.suffix {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
