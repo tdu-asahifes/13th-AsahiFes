@@ -1,9 +1,4 @@
 
-
-.navbar {
-  background-color: rgba(245, 80, 80, 0.995);
-}
-
 .navbar-brand,
 .nav-link,
 .navbar-toggler-icon {
@@ -13,15 +8,50 @@
 .navbar .navbar-toggler {
   border-color: white;
 }
+.navbar-brand:hover,
+.nav-item:hover{
+border-bottom: 3px solid whitesmoke;
+box-shadow: 0 14px 20px -4px rgba(0,0,0,.25);
+transform: scale(1.1);
+background-color: #c0777e;
+font-weight:bold;
+}
 
-.nav-link:hover {
-  background-color: #cd9898; /* ヘッダーのリンクにホバーしたときの文字色 */
+.nav-link:hover{
   color:white;
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+.img-container img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+
+
+.balloon2-left::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  transform: translateY(-50%);
+  border: 12px solid transparent;
+  border-right: 14px solid #FFF;
+  z-index: 2;
+}
+
+.balloon2-left:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -14px;
+  border: 14px solid transparent;
+  border-right: 14px solid #6c757d;
+}
+
 
 #countdown {
   font-size: 2rem;
