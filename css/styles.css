@@ -7,14 +7,19 @@
 .navbar .navbar-toggler {
   border-color: white;
 }
-
-.navbar-brand:hover,
+.nav-item{
+  border-bottom:3px;
+  border-bottom:3px solid transparent;
+}
+.navbar-brand img:hover,
 .nav-item:hover{
-border-bottom: 3px solid whitesmoke;
+border-bottom-color: whitesmoke;
 box-shadow: 0 14px 20px -4px rgba(0,0,0,.25);
 transform: scale(1.1);
 background-color: #c0777e;
 font-weight:bold;
+border-radius: 4px;
+transition:all 0.3s ease;
 }
 
 .nav-link:hover {
