@@ -78,3 +78,15 @@ transition:all 0.3s ease;
 }
 
 
+.title-frame {
+  border: 3px solid #f55050;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 5vh;
+}
+
+.title {
+  font-size: 50px;
+  font-family: "BananaFont";
+  color: #f55050;
+}
