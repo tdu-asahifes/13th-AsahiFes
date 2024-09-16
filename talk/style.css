@@ -4,6 +4,11 @@
     -webkit-text-fill-color: transparent;
 }
 
+.bg-gradient-primary-to-secondary {
+    background: #f31e1e;
+    background: linear-gradient(135deg, #f31e1e 0%, #f2b022 100%);
+}
+
 .hidden-element {
     opacity: 0;
     max-height: 0;
