@@ -85,3 +85,8 @@ transition:all 0.3s ease;
   margin-bottom: 5vh;
 }
 
+.title {
+  font-size: 50px;
+  font-family: "BananaFont";
+  color: #f55050;
+}
