@@ -6,19 +6,6 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-var toggleButton = document.getElementById("toggleButton");
-var hiddenElement = document.getElementById("hiddenElement");
-
-toggleButton.addEventListener("click", function () {
-  if (hiddenElement.classList.contains("visible")) {
-    hiddenElement.classList.remove("visible");
-    toggleButton.textContent = "さらに表示する";
-  } else {
-    hiddenElement.classList.add("visible");
-    toggleButton.textContent = "非表示にする";
-  }
-});
-
 // scripts.js
 var agreeCheckbox = document.getElementById("agreeCheckbox");
 var ticketLink = document.getElementById("ticketLink");
@@ -169,15 +156,3 @@ burger.addEventListener("click", () => {
   //burger animataion
   burger.classList.toggle("toggle");
 });
-
-// // 注意事項を確認するチェックボックスの状態に応じてボタンの有効/無効を切り替える
-// var agreeCheckbox = document.getElementById("agreeCheckbox");
-// var ticketLink = document.getElementById("ticketLink");
-
-// agreeCheckbox.addEventListener("change", function() {
-//     if (agreeCheckbox.checked) {
-//         ticketLink.removeAttribute("disabled");
-//     } else {
-//         ticketLink.setAttribute("disabled", true);
-//     }
-// });
