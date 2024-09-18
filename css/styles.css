@@ -90,3 +90,13 @@ transition:all 0.3s ease;
   font-family: "BananaFont";
   color: #f55050;
 }
+
+.sponsor-images {
+  justify-content: center;
+  align-content: center !important;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: flex; */
+  align-items: center;
+
+}
