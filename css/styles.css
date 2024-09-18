@@ -35,6 +35,7 @@ transition:all 0.3s ease;
   max-height: 100px;
 }
 
+
 .balloon2-left::before {
   content: "";
   position: absolute;
@@ -77,4 +78,6 @@ transition:all 0.3s ease;
   vertical-align: middle;
 }
 
-
+.fab:hover{
+  color:darkgrey;
+}
