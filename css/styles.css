@@ -1,3 +1,7 @@
+.navbar {
+  background-color: #f55050;
+  /* ヘッダーの背景色 */
+}
 .navbar-brand,
 .nav-link,
 .navbar-toggler-icon {
@@ -16,18 +20,127 @@
 border-bottom-color: whitesmoke;
 box-shadow: 0 14px 20px -4px rgba(0,0,0,.25);
 transform: scale(1.1);
-background-color: #c0777e;
-font-weight:bold;
+background-color: #840916;
+
 border-radius: 4px;
 transition:all 0.3s ease;
 }
 
 .nav-link:hover {
-  color:white;
+  background-color: #cd9898;
+  /* ヘッダーのリンクにホバーしたときの文字色 */
+  color: white;
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* アクセスmap用画像切り替え */
+.svg-section .svg-container {
+  width: 100%;
+  /* 親コンテナはレスポンシブ */
+  text-align: center;
+  /* SVGを中央に配置 */
+}
+
+.svg-section .responsive-svg {
+  width: 100%;
+  /* SVGの幅を親コンテナ全体に設定 */
+  max-width: 400px;
+  /* SVGの最大幅を400pxに設定（デフォルト） */
+  height: auto;
+  /* 自動で高さを調整してアスペクト比を維持 */
+  display: inline-block;
+  /* インラインブロックで中央配置 */
+  transform: scale(1.5);
+  /* SVGを1.5倍にスケールアップ */
+  transform-origin: center;
+  /* 中央からスケーリング */
+}
+
+.modal-button {
+  cursor: pointer;
+  /* ポインタカーソルにする */
+  fill: none;
+  /* 背景を透明にする */
+  stroke: #000;
+  /* 外枠の色 */
+  stroke-width: 2;
+  /* 外枠の幅 */
+  transition: fill 0.3s ease;
+  /* 色の遷移 */
+}
+
+.modal-button:hover {
+  fill: rgba(0, 0, 255, 0.2);
+  /* ホバー時の背景色 */
+}
+
+
+/* 過去サイトがまとめられているnotionに飛ぶためのボタンです */
+
+.site-button {
+  /* margin-top: 3rem; */
+  display: inline-block;
+  border-radius: 60px;
+  font-size: 18pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: #f55050;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .2s;
+  box-shadow: 4px 4px 6px #50f5f5;
+  border: 2px solid #f55050;
+  text-decoration: none;
+}
+
+.site-button:hover {
+  background-color: #50f5f5;
+  /* ホバー時に色が濃くなる */
+  color: #1b0a0a;
+}
+
+.site-button svg {
+  margin-left: 8px;
+  /* テキストとアイコンの間隔 */
+  fill: currentColor;
+  /* アイコンの色を親要素の色に合わせる */
+  width: 1.2em;
+  /* アイコンのサイズ */
+  height: 1.2em;
+  /* アイコンのサイズ */
+}
+
+/* mt-3=1に倣って作成してます */
+.mt-24 {
+  margin-top: 8rem;
+}
+
+.mb-15 {
+  margin-bottom: 5rem;
+}
+
+/* タイトル関係　仮で作ったものなのでデザインとかは変更しちゃってください */
+
+.title-frame {
+  border: 3px solid #f55050;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 5vh;
+}
+
+@font-face {
+  font-family: 'BananaFont';
+  src: url('../fonts/YDWbananaslipplus.otf') format('truetype');
+}
+
+.title {
+  font-size: 50px;
+  font-family: "BananaFont";
+  color: #f55050;
 }
 
 .img-container img {
@@ -57,6 +170,10 @@ transition:all 0.3s ease;
   border-right: 14px solid #6c757d;
 }
 
+.kuruton{
+  list-style: none;
+  text-align:justify;
+}
 
 #countdown {
   font-size: 2rem;
