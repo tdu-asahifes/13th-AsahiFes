@@ -76,5 +76,23 @@ transition:all 0.3s ease;
   font-size: 1.5rem;
   vertical-align: middle;
 }
-
-
+.kikakuslide{
+  display: flex;
+  overflow-x:scroll;
+}
+.kikaku{
+  display: flex;
+  width: 250px;
+  height: 187px;
+}
+.imgrad{
+  border-radius: 40px;
+  padding: 3px;
+}
+.imgrad:hover{
+  border-radius: 40px;
+  padding: 1px;
+}
+.modalbg{
+  background-color: #393838;
+}
