@@ -231,3 +231,20 @@ transition:all 0.3s ease;
 .fab:hover{
   color:darkgrey;
 }
+
+.guest-img{
+  width:70%;
+  margin-right:auto;
+  margin-left:auto;
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+.guest-img:hover{
+  transform: scale(1.05);
+}
+.guest-img-tmp{
+  width:70%;
+  margin-right:auto;
+  margin-left:auto;
+  border-radius: 20px;
+}
