@@ -194,6 +194,40 @@ transition:all 0.3s ease;
   vertical-align: middle;
 }
 
+.title-frame {
+  border: 3px solid #f55050;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 5vh;
+}
+
+.title {
+  font-size: 50px;
+  font-family: "BananaFont";
+  color: #f55050;
+}
+
+.sponsor-images {
+  justify-content: center;
+  align-content: center !important;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: flex; */
+  align-items: center;
+
+}
+
+.sponsor-img {
+  max-width: auto;
+  height: 40px;
+  transition: transform 0.2s;
+
+}
+
+.sponsor-img:hover {
+  transform: scale(1.05);
+}
+
 .fab:hover{
   color:darkgrey;
 }
