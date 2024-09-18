@@ -1,131 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- BootstrapのCSS読み込み -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href = "css/styles.css" rel = "stylesheet">
-    <script src="https://kit.fontawesome.com/cb1e427f8e.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cb1e427f8e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand me-auto ms-3" href="index.html" ><img src = "images/asahisai.png" style="width:300px;"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto me-3">
-            <li class="nav-item" >
-              <a class="nav-link" href="#theme">今年のテーマ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#greeting">ご挨拶</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#guests">今年のゲスト</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#events">企画</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#campusmap">キャンパスマップ</a>
-            </li>  
-            <li class="nav-item">
-              <a class="nav-link" href="#companey">協賛企業</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Precautions">諸注意</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#accuses">アクセス</a>
-            </li>               
-          </ul>
-        </div>
+    <a class="navbar-brand me-auto ms-3" href="index.html"><img src="images/asahisai.png" style="width:300px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto me-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#theme">今年のテーマ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#greeting">ご挨拶</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#guests">今年のゲスト</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#events">企画</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#campusmap">キャンパスマップ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#companey">協賛企業</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Precautions">諸注意</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#accuses">アクセス</a>
+        </li>
+      </ul>
     </div>
-   </nav>
-        <section id = "theme">
-            <h2>テーマ</h2>
-        </section>
-        <section id = "greeting">
-            <h2>ご挨拶</h2>
-        </section>
-        <section id = "guests">
-            <h2>企画</h2>
-        </section>
-        <section id = "campusmap">
-            <h2>キャンパスマップ</h2>
-        </section>
-        <section id = "precautions">
-            <h2>諸注意</h2>
-        </section>
-      <!-- アクセス -->
-        <section id = "accuses">
-          <div class="mt-24 mb-15">
-            <div class="title-frame mx-auto px-2.5">
-                <div class="title">アクセス</div>
+    </div>
+  </nav>
+  <section id="theme">
+    <h2>テーマ</h2>
+  </section>
+  <section id="greeting">
+    <h2>ご挨拶</h2>
+  </section>
+  <section id="guests">
+    <h2>企画</h2>
+  </section>
+  <section id="campusmap">
+    <h2>キャンパスマップ</h2>
+  </section>
+  <section id="precautions">
+    <div class="container mt-5 pt-5 font-banana" id="caution">
+
+      <div class="row text-center mt-5">
+        <p>
+        </p>
+        <div class="mt-24 mb-15">
+          <div class="title-frame mx-auto px-2">
+            <div class="title">
+              諸注意
             </div>
           </div>
-        </section>
-        <div class="container mt-5">
-          <div class="row justify-content-center">
-              <div class="col-md-6">
-                  <!-- SVGとクリック可能なエリア -->
-                  <div class="svg-container">
-                    <svg class="responsive-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
-                          <!-- SVGの背景画像や他のデザイン要素 -->
-                          <image href="images/access_station-school.svg" width="400" height="200" />
-                          
-                          <!-- クリック可能なエリア -->
-                          <a href="#" class="modal-button" data-toggle="modal" data-target="#galleryModal" data-images="images/JR_1.jpeg,images/JR_2.jpeg,images/JR_3.jpeg">
-                              <g id="_5" data-name="5">
-                                  <polygon class="cls-7" points="50,50 150,50 150,150 50,150"></polygon>
-                                  <text class="cls-11" transform="translate(70, 100)">
-                                      <tspan x="0" y="0">ギャラリー1</tspan>
-                                  </text>
-                              </g>
-                          </a>
-                      </svg>
-                  </div>
-              </div>
-          </div>
-      </div>  
-        <!-- 共通モーダル -->
-        <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="galleryModalLabel">画像ギャラリー</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                      <img id="galleryImage" src="" class="img-fluid" alt="ギャラリー画像" style="cursor: pointer;">
-                  </div>
-                  <div class="modal-footer">
-                  </div>
-              </div>
-          </div>
+        </div>
+        <p></p>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa-solid fa-circle fa-2xl" style="color: #ff0000;"></i>
+            <i class="fas fa-comments fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="my-3">受付について</h4>
+          <p class="text-muted">
+            展示全般についてのご質問や迷子・落とし物など、何か困ったことがございましたら受付までお越しいただくか、紫色のジャンパーを着たスタッフまでお尋ねください。
+          </p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa-solid fa-circle fa-2xl" style="color: #ff0000;"></i>
+            <i class="fas fa-ambulance fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="my-3">ケガしたとき</h4>
+          <p class="text-muted">
+            万が一、ケガをしてしまった場合、または具合が悪くなってしまった場合、紺色のジャンパーを着たスタッフにお声掛けください。スタッフが健康相談室までご案内いたします。
+          </p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa-solid fa-circle fa-2xl" style="color: #ff0000;"></i>
+            <i class="fas fa-cutlery fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="my-3">飲食について</h4>
+          <p class="text-muted">
+            キャンパスプラザに設置する机、３号館内の席でのみお願い致します。
+          </p>
+        </div>
       </div>
-      <!-- リンク集 -->
-        <div class="mt-24 mb-15 text-center">
-          <div class="title-frame mx-auto px-2.5">
-              <div class="title">リンク集</div>
-          </div>
-          <a href="https://asahisai.notion.site/HP-4771789a7eb84bc18d46a4c449457aaa?pvs=4" target="_blank" rel="noopener" class="site-button ">旭祭HPアーカイブ </path><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          <p class="mt-4">notionのサイトに移動します</p>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <span class="fa-stack fa-4x">
+            <i class="fa-solid fa-circle fa-2xl" style="color: #ff0000;"></i>
+            <i class="fa-solid fa-smoking fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="my-3">喫煙について</h4>
+          <p class="text-muted">
+            旭祭期間中の喫煙場所は１号館６階ルーフガーデン喫煙スペース、４号館６階４０６１５屋外喫煙スペース、５号館６階ルーフガーデン喫煙スペースの３カ所となっております。
+            また、２０歳未満の喫煙は法律で禁止されています。
+          </p>
+        </div>
+        <div class="col-md-6">
+          <span class="fa-stack fa-4x">
+            <i class="fa-solid fa-circle fa-2xl" style="color: #ff0000;"></i>
+            <i class="fas fa-beer fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="my-3">飲酒について</h4>
+          <p class="text-muted">
+            旭祭期間中における本学への酒類の持ち込みは禁止です。また、２０歳未満の飲酒は法律で禁止されています。
+          </p>
+        </div>
+        <p><br></p>
       </div>
-      
-        
-        
+    </div>
+  </section>
+  <!-- アクセス -->
+  <section id="accuses">
+    <div class="mt-24 mb-15">
+      <div class="title-frame mx-auto px-2">
+        <div class="title">アクセス</div>
+      </div>
+    </div>
+  </section>
+  <div class="container mt-4">
+    <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4047.7038416310384!2d139.8071013235444!3d35.74881655509189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188e5211a864ef%3A0x26a050d2e5ee79fc!2z5p2x5Lqs6Zu75qmf5aSn5a2m!5e0!3m2!1sja!2sjp!4v1726632884476!5m2!1sja!2sjp"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div></div>
+  <!-- リンク集 -->
+  <div class="mt-24 mb-15 text-center">
+    <div class="title-frame mx-auto px-2">
+      <div class="title">リンク集</div>
+    </div>
+    <a href="https://asahisai.notion.site/HP-4771789a7eb84bc18d46a4c449457aaa?pvs=4" target="_blank" rel="noopener"
+      class="site-button ">旭祭HPアーカイブ </path><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <p class="mt-4">notionのサイトに移動します</p>
+  </div>
+
+
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
   <script src="js/script.js" defer></script>
 </body>
+
 </html>

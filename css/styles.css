@@ -1,5 +1,3 @@
-
-
 .navbar {
   background-color: rgba(245, 80, 80, 0.995);
 }
@@ -15,8 +13,9 @@
 }
 
 .nav-link:hover {
-  background-color: #cd9898; /* ヘッダーのリンクにホバーしたときの文字色 */
-  color:white;
+  background-color: #cd9898;
+  /* ヘッダーのリンクにホバーしたときの文字色 */
+  color: white;
 }
 
 .navbar-toggler-icon {
@@ -25,28 +24,43 @@
 
 /* アクセスmap用画像切り替え */
 .svg-section .svg-container {
-  width: 100%; /* 親コンテナはレスポンシブ */
-  text-align: center; /* SVGを中央に配置 */
+  width: 100%;
+  /* 親コンテナはレスポンシブ */
+  text-align: center;
+  /* SVGを中央に配置 */
 }
 
 .svg-section .responsive-svg {
-  width: 100%; /* SVGの幅を親コンテナ全体に設定 */
-  max-width: 400px; /* SVGの最大幅を400pxに設定（デフォルト） */
-  height: auto; /* 自動で高さを調整してアスペクト比を維持 */
-  display: inline-block; /* インラインブロックで中央配置 */
-  transform: scale(1.5); /* SVGを1.5倍にスケールアップ */
-  transform-origin: center; /* 中央からスケーリング */
+  width: 100%;
+  /* SVGの幅を親コンテナ全体に設定 */
+  max-width: 400px;
+  /* SVGの最大幅を400pxに設定（デフォルト） */
+  height: auto;
+  /* 自動で高さを調整してアスペクト比を維持 */
+  display: inline-block;
+  /* インラインブロックで中央配置 */
+  transform: scale(1.5);
+  /* SVGを1.5倍にスケールアップ */
+  transform-origin: center;
+  /* 中央からスケーリング */
 }
+
 .modal-button {
-  cursor: pointer; /* ポインタカーソルにする */
-  fill: none; /* 背景を透明にする */
-  stroke: #000; /* 外枠の色 */
-  stroke-width: 2; /* 外枠の幅 */
-  transition: fill 0.3s ease; /* 色の遷移 */
+  cursor: pointer;
+  /* ポインタカーソルにする */
+  fill: none;
+  /* 背景を透明にする */
+  stroke: #000;
+  /* 外枠の色 */
+  stroke-width: 2;
+  /* 外枠の幅 */
+  transition: fill 0.3s ease;
+  /* 色の遷移 */
 }
 
 .modal-button:hover {
-  fill: rgba(0, 0, 255, 0.2); /* ホバー時の背景色 */
+  fill: rgba(0, 0, 255, 0.2);
+  /* ホバー時の背景色 */
 }
 
 
@@ -70,24 +84,29 @@
 }
 
 .site-button:hover {
-  background-color: #50f5f5; /* ホバー時に色が濃くなる */
+  background-color: #50f5f5;
+  /* ホバー時に色が濃くなる */
   color: #1b0a0a;
 }
 
 .site-button svg {
-  margin-left: 8px; /* テキストとアイコンの間隔 */
-  fill: currentColor; /* アイコンの色を親要素の色に合わせる */
-  width: 1.2em; /* アイコンのサイズ */
-  height: 1.2em; /* アイコンのサイズ */
+  margin-left: 8px;
+  /* テキストとアイコンの間隔 */
+  fill: currentColor;
+  /* アイコンの色を親要素の色に合わせる */
+  width: 1.2em;
+  /* アイコンのサイズ */
+  height: 1.2em;
+  /* アイコンのサイズ */
 }
 
 /* mt-3=1に倣って作成してます */
 .mt-24 {
-  margin-top:8rem;
+  margin-top: 8rem;
 }
 
 .mb-15 {
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
 }
 
 /* タイトル関係　仮で作ったものなのでデザインとかは変更しちゃってください */
