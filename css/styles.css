@@ -100,3 +100,14 @@ transition:all 0.3s ease;
   align-items: center;
 
 }
+
+.sponsor-img {
+  max-width: auto;
+  height: 40px;
+  transition: transform 0.2s;
+
+}
+
+.sponsor-img:hover {
+  transform: scale(1.05);
+}
