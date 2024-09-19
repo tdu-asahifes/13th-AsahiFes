@@ -1,7 +1,3 @@
-.navbar {
-  background-color: #f55050;
-  /* ヘッダーの背景色 */
-}
 .navbar-brand,
 .nav-link,
 .navbar-toggler-icon {
@@ -20,7 +16,7 @@
 border-bottom-color: whitesmoke;
 box-shadow: 0 14px 20px -4px rgba(0,0,0,.25);
 transform: scale(1.1);
-background-color: #840916;
+background-color: #a04949;
 
 border-radius: 4px;
 transition:all 0.3s ease;
@@ -247,4 +243,11 @@ transition:all 0.3s ease;
   margin-right:auto;
   margin-left:auto;
   border-radius: 20px;
+}
+
+.bg-thema{
+  background-color: #771d24;
+}
+.text-thema{
+  color: #771d24;
 }
