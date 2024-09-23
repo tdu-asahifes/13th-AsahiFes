@@ -35,3 +35,15 @@ function countdown() {
 }
 
 setInterval(countdown, 1000);
+
+
+
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(function (navLink) {
+    navLink.addEventListener('click', function () {
+      var navbarCollapse = document.querySelector('.navbar-collapse');
+      var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false
+      });
+      bsCollapse.hide(); // メニューを閉じる
+    });
+  });
