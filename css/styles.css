@@ -483,7 +483,13 @@
   color: #771d24;
 }
 
-.theme-explanation{
+.theme-explanation {
   border-color: #f55050;
   border-radius: 10%;
+}
+
+.font-GPBT {
+  font-family: "georgiapro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
