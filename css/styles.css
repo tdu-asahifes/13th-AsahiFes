@@ -1,7 +1,3 @@
-.navbar {
-  background-color: #f55050;
-  /* ヘッダーの背景色 */
-}
 .navbar-brand,
 .nav-link,
 .navbar-toggler-icon {
@@ -10,6 +6,11 @@
 
 .navbar .navbar-toggler {
   border-color: white;
+}
+
+.navbar{
+  position: sticky;
+  width:100%;
 }
 .nav-item{
   border-bottom:3px;
@@ -20,20 +21,23 @@
 border-bottom-color: whitesmoke;
 box-shadow: 0 14px 20px -4px rgba(0,0,0,.25);
 transform: scale(1.1);
-background-color: #840916;
+background-color: #bb6666;
 
 border-radius: 4px;
 transition:all 0.3s ease;
 }
 
-.nav-link:hover {
-  background-color: #cd9898;
+  background-color: #bb6666;
+  /* ヘッダーのリンクにホバーしたときの文字色 */
   color: white;
 }
-.theme-explanation{
-  border-color: #f55050;
-  border-radius: 10%;
+
+.nav-logo{
+  width: 20vw;
 }
+
+
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
@@ -90,17 +94,18 @@ transition:all 0.3s ease;
   text-align: center;
   cursor: pointer;
   padding: 12px 12px;
-  background: #f55050;
+  background: #771d24;
   color: #ffffff;
   line-height: 1em;
   transition: .2s;
-  box-shadow: 4px 4px 6px #50f5f5;
-  border: 2px solid #f55050;
+  box-shadow: 4px 4px 6px #f55050;
+  border: 2px solid #771d24;
   text-decoration: none;
 }
 
 .site-button:hover {
-  background-color: #50f5f5;
+  background-color: #ee5b5b;
+  border: 2px solid #771d24;
   /* ホバー時に色が濃くなる */
   color: #1b0a0a;
 }
@@ -197,7 +202,64 @@ transition:all 0.3s ease;
   vertical-align: middle;
 }
 
+.title-frame {
+  border: 3px solid #f55050;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 5vh;
+}
+
+.title {
+  font-size: 50px;
+  font-family: "BananaFont";
+  color: #f55050;
+}
+
+.sponsor-images {
+  justify-content: center;
+  align-content: center !important;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: flex; */
+  align-items: center;
+
+}
+
+.sponsor-img {
+  max-width: auto;
+  height: 40px;
+  transition: transform 0.2s;
+
+}
+
+.sponsor-img:hover {
+  transform: scale(1.05);
+}
+
 .fab:hover{
   color:darkgrey;
 }
 
+.guest-img{
+  width:70%;
+  margin-right:auto;
+  margin-left:auto;
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+.guest-img:hover{
+  transform: scale(1.05);
+}
+.guest-img-tmp{
+  width:70%;
+  margin-right:auto;
+  margin-left:auto;
+  border-radius: 20px;
+}
+
+.bg-thema{
+  background-color: #771d24;
+}
+.text-thema{
+  color: #771d24;
+}

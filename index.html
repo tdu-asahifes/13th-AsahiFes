@@ -5,7 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" type="image/ico" href="https://www.sg.dendai.ac.jp/s1j-asahisai/images/asahi.ico">
+
   <!-- BootstrapのCSS読み込み -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,11 +14,34 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cb1e427f8e.js" crossorigin="anonymous"></script>
+  <meta name="twitter:site" content="@asahisai">
+
+  <!--SEO-->
+  <meta property="og:image" content="https://www.sg.dendai.ac.jp/s1j-asahisai/images/top.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="東京電機大学東京千住キャンパス学園祭　旭祭実行委員会の公式HPです">
+  <meta property="og:title" content="旭祭実行委員会 | 東京電機大学東京千住キャンパス">
+  <meta property="og:url" content="http://www.sg.dendai.ac.jp/s1j-asahisai/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="第13回東京電機大学旭祭">
+  <META name="keywords" content="旭祭,東京電機大学,電大,tdu,東京電機大学学園祭,学園祭,東京千住キャンパス,">
+  <title>第13回東京電機大学旭祭</title>
+
+  <!--google tag-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-47C8XLB4N6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-47C8XLB4N6');
+  </script>
+
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand me-auto ms-3" href="index.html"><img src="images/asahisai.png" style="width:300px;"></a>
+<body class="bg-dark text-white">
+  <nav class="navbar navbar-expand-lg sticky-top bg-thema">
+    <a class="navbar-brand me-auto ms-3" href="index.html"><img src="images/asahisai.png" class="nav-logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,7 +55,7 @@
           <a class="nav-link" href="#greeting">ご挨拶</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#guests">今年のゲスト</a>
+          <a class="nav-link" href="#guests">ゲスト</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#events">企画</a>
@@ -43,7 +67,7 @@
           <a class="nav-link" href="#companey">協賛企業</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#caution">諸注意</a>
+          <a class="nav-link" href="#precautions">諸注意</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#accuses">アクセス</a>
@@ -52,18 +76,28 @@
     </div>
     </div>
   </nav>
-  <img src="images/top.png" class="w-100 h-auto mb-3" >
-  <div class="mt-3 d-flex justify-content-center align-items-center">
-    <li class ="kuruton">
-      <img src="images/kuruton.png" class="me-5" alt="kuruton" style="max-width: 100px; max-height: 100px;">
-      <p>クルトン</p>
-    </li>
-    <div class="bg-white border border-3 border-secondary  rounded p-2 position-relative">
-      <div class="container text-center balloon2-left">
-        <div id="countdown">
-          <span class="prefix">旭祭まであと</span>
-          <span class="days"></span>
-          <span class="suffix">日</span>
+  <img src="images/top.png" class="w-100 h-auto mb-3">
+
+  <section id="date" class="text-center mb-5">
+    <div class="mt-24 mb-10">
+      <div class="title-frame mx-auto px-2">
+        <div class="title">開催日時</div>
+      </div>
+    </div>
+    <div class="fs-2 fw-bold">11月2日(土) 10:00〜17:00</div>
+    <div class="fs-2 fw-bold">11月3日(日) 10:00〜16:00</div>
+    <div class="mt-3 d-flex justify-content-center align-items-center">
+      <li class="kuruton">
+        <img src="images/kuruton.png" class="me-5" alt="kuruton" style="max-width: 100px; max-height: 100px;">
+        <p>クルトン</p>
+      </li>
+      <div class="bg-white border border-3 border-secondary  rounded p-2 position-relative">
+        <div class="container text-center balloon2-left text-black">
+          <div id="countdown">
+            <span class="prefix">旭祭まであと</span>
+            <span class="days"></span>
+            <span class="suffix">日</span>
+          </div>
         </div>
       </div>
     </div>
@@ -86,16 +120,80 @@
   </section>
   <section id="greeting">
     <h2>ご挨拶</h2>
+
   </section>
-  <section id="guests">
-    <h2>企画</h2>
+  <section id="guests" class="text-center my-5 mt-5">
+    <div class="container mt-5 font-banana">
+      <div class="mt-24 mb-10"></div>
+      <div class="title-frame mx-auto px-2">
+        <div class="title">ゲスト</div>
+      </div>
+    </div>
+    <div class="container px-0">
+      <div class="row gx-0 align-items-center">
+        <!-- <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0"> -->
+        <div class="container-fluid px-0">
+          <div class="row mt-3">
+            <div class="col-md-6 mb-4">
+              <div class="text-center">
+                <a href="talk/"> <img src="images/kikaku/talk.png" class="guest-img"></a>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="text-center">
+                <a href="comedy/"><img src="images/kikaku/comedy.png" class="guest-img"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section id="campusmap">
-    <h2>キャンパスマップ</h2>
+  <section id="companey">
+    <div class="mt-24 mb-15">
+      <div class="title-frame mx-auto px-2">
+        <div class="title">協賛</div>
+      </div>
+    </div>
+
+    <div class="sponsor-images col-10 text-center">
+      <!-- avance -->
+      <a href="https://www.avance-cosme.co.jp/" target="_blank" rel="noopener"><img class="sponsor-img m-1"
+          src="images/sponsor/avanse.jpg"></a>
+      <!-- Bellas -->
+      <a href="https://www.bellas-cupcakes.jp" target="_blank" rel="noopener"><img class="sponsor-img m-1"
+          src="images/sponsor/Bellas-cupcakes-logo2.png"></a>
+      <!-- eiwa -->
+      <a href="https://www.eiwamm.co.jp/" target="_blank" rel="noopener"><img class="sponsor-img m-1"
+          src="images/sponsor/eiwa.jpg"></a>
+      <!-- GALA -->
+      <a href="https://gala.co.jp/summer/" target="_blank" rel="noopener"><img class="sponsor-img m-1"
+          src="images/sponsor/GALA.png"></a>
+      <!-- hakata -->
+      <a href="https://www.hakatanoshio.co.jp/" target="_blank" rel="noopener"><img class="sponsor-img m-1"
+          src="images/sponsor/hakata.jpg"></a>
+      <!-- haribo -->
+      <a href="https://www.hario.com/" target="_blank" rel="noopener"><img class="sponsor-img m-1"
+          src="images/sponsor/Hario_Brandmark.jpg"></a>
+      <!-- ikaho URL未-->
+      <a href="" target="_blank" rel="noopener"><img class="sponsor-img m-1" src="images/sponsor/ikaho.jpg"></a>
+      <!-- KINUJO -->
+      <a href="https://kinujo.jp/" target="_blank" rel="noopener"><img class="sponsor-img m-1"
+          src="images/sponsor/KINUJO.jpg"></a>
+      <!-- mannan URL未-->
+      <a href="" target="_blank" rel="noopener"><img class="sponsor-img m-1" src="images/sponsor/mannan.jpg"></a>
+      <!-- ogawa -->
+      <a href="https://www.oc-ogawa.co.jp/coffee-no-hiroba/" target="_blank" rel="noopener"><img class="sponsor-img m-1"
+          src="images/sponsor/ogawa.jpg"></a>
+    </div>
+    <!-- <div>
+            !-- さがみハイテック --
+            <a href="https://www.mhi.com/jp/group/msh/" target="_blank" rel="noopener"><img class="m-1"
+                    src="material/sponsor/sagami.png" style="width:40%"></a>
+        </div> -->
   </section>
   <section id="precautions">
-    <div class="container mt-5 pt-5 font-banana" id="caution">
-
+    <div class="container mt-5 font-banana" id="caution">
       <div class="row text-center mt-5">
         <p>
         </p>
@@ -109,7 +207,7 @@
         <p></p>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa-solid fa-circle fa-2xl" style="color: #ff0000;"></i>
+            <i class="fa-solid fa-circle fa-2xl" style="color: #771d24"></i>
             <i class="fas fa-comments fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="my-3">受付について</h4>
@@ -119,7 +217,7 @@
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa-solid fa-circle fa-2xl" style="color: #ff0000;"></i>
+            <i class="fa-solid fa-circle fa-2xl" style="color: #771d24"></i>
             <i class="fas fa-ambulance fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="my-3">ケガしたとき</h4>
@@ -129,7 +227,7 @@
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa-solid fa-circle fa-2xl" style="color: #ff0000;"></i>
+            <i class="fa-solid fa-circle fa-2xl" style="color: #771d24"></i>
             <i class="fas fa-cutlery fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="my-3">飲食について</h4>
@@ -141,7 +239,7 @@
       <div class="row text-center">
         <div class="col-md-6">
           <span class="fa-stack fa-4x">
-            <i class="fa-solid fa-circle fa-2xl" style="color: #ff0000;"></i>
+            <i class="fa-solid fa-circle fa-2xl" style="color: #771d24"></i>
             <i class="fa-solid fa-smoking fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="my-3">喫煙について</h4>
@@ -152,7 +250,7 @@
         </div>
         <div class="col-md-6">
           <span class="fa-stack fa-4x">
-            <i class="fa-solid fa-circle fa-2xl" style="color: #ff0000;"></i>
+            <i class="fa-solid fa-circle fa-2xl" style="color: #771d24"></i>
             <i class="fas fa-beer fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="my-3">飲酒について</h4>
@@ -189,29 +287,24 @@
       class="site-button ">旭祭HPアーカイブ </path><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     <p class="mt-4">notionのサイトに移動します</p>
   </div>
-  <footer class="bg-danger text-white">
+  <footer class="bg-thema text-white">
     <div class="d-flex justify-content-center pt-3">
-
-        <a href="https://x.com/asahisai" class="text-white mx-5">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="https://www.instagram.com/asahisai/" class="text-white mx-5">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a href="https://www.youtube.com/@user-rq1hq1dj7p/featured" class="text-white mx-5">
-          <i class="fab fa-youtube fa-2x"></i>
-        </a>
+      <a href="https://x.com/asahisai" class="text-white mx-5">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/asahisai/" class="text-white mx-5">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://www.youtube.com/@user-rq1hq1dj7p/featured" class="text-white mx-5">
+        <i class="fab fa-youtube fa-2x"></i>
+      </a>
     </div>
-      <hr class="border border-light mt-3">
-      <div class="text-center">
-        <div class="pb-3">&copy; 2024  東京電機大学旭祭実行委員会</div>
-      </div>
+    <hr class="border border-light mt-3">
+    <div class="text-center">
+      <div class="pb-3">&copy; 2024 東京電機大学旭祭実行委員会</div>
+    </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
