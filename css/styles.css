@@ -296,6 +296,10 @@
   color: #f55050;
 }
 
+.font-banana {
+  font-family: "BananaFont";
+}
+
 .img-container img {
   max-width: 100px;
   max-height: 100px;
