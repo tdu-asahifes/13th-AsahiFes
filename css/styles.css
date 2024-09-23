@@ -482,3 +482,8 @@
 .text-thema {
   color: #771d24;
 }
+
+.theme-explanation{
+  border-color: #f55050;
+  border-radius: 10%;
+}
