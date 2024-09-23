@@ -16,14 +16,14 @@
 border-bottom-color: whitesmoke;
 box-shadow: 0 14px 20px -4px rgba(0,0,0,.25);
 transform: scale(1.1);
-background-color: #a04949;
+background-color: #bb6666;
 
 border-radius: 4px;
 transition:all 0.3s ease;
 }
 
 .nav-link:hover {
-  background-color: #cd9898;
+  background-color: #bb6666;
   /* ヘッダーのリンクにホバーしたときの文字色 */
   color: white;
 }
