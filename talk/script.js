@@ -9,17 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const buttons = [
     {
       buttonId: "ticketButton",
-      link: "https://tdu.box.com/s/link1",
+      link: "https://tdu.app.box.com/s/5skpzp06fdsb2f3kjdw9ra9ee08mxms0",
       title: "学内向け",
     },
     {
       buttonId: "ticketButton2",
-      link: "https://tdu.box.com/s/link2",
+      link: "https://eplus.jp/sf/detail/4192720001-P0030001",
       title: "一般向け",
     },
     {
       buttonId: "ticketButton3",
-      link: "https://tdu.box.com/s/link3",
+      link: "https://eplus.jp/sf/detail/4192720001-P0030001",
       title: "一般向け",
     },
   ];
