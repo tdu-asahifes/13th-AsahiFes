@@ -65,47 +65,29 @@
             </div>
 
         <div class="row">
-            <aside class="col-3">
-            <button class="button" onclick="toggleDiv(14); changeColor(this)">１４階</button>
-            <button class="button" onclick="toggleDiv(13); changeColor(this)">１３階</button>
-            <button class="button" onclick="toggleDiv(12); changeColor(this)">１２階</button>
-            <button class="button" onclick="toggleDiv(11); changeColor(this)">１１階</button>
-            <button class="button" onclick="toggleDiv(10); changeColor(this)">１０階</button>
-            <button class="button" onclick="toggleDiv(9); changeColor(this)">９階</button>
-            <button class="button" onclick="toggleDiv(8); changeColor(this)">８階</button>
-            <button class="button" onclick="toggleDiv(7); changeColor(this)">７階</button>
-            <button class="button" onclick="toggleDiv(6); changeColor(this)">６階</button>
-            <button class="button" onclick="toggleDiv(5); changeColor(this)">５階</button>
-            <button class="button" onclick="toggleDiv(4); changeColor(this)">４階</button>
-            <button class="button" onclick="toggleDiv(3); changeColor(this)">３階</button>
-            <button class="button" onclick="toggleDiv(2); changeColor(this)">２階</button>
-            <button class="button" onclick="toggleDiv(1); changeColor(this)">１階</button>
-            <button class="button" onclick="toggleDiv(15); changeColor(this)">一覧</button>
-            <!-- 他のボタンも同様に続く -->
-            </aside>
-
+            
             <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                   階を選択
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <!-- ドロップダウンのリスト -->
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(14); changeColor(this)">14階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(13); changeColor(this)">13階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(12); changeColor(this)">12階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(11); changeColor(this)">11階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(10); changeColor(this)">10階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(9); changeColor(this)">9階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(8); changeColor(this)">8階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(7); changeColor(this)">7階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(6); changeColor(this)">6階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(5); changeColor(this)">5階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(4); changeColor(this)">4階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(3); changeColor(this)">3階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(2); changeColor(this)">2階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(1); changeColor(this)">1階</a>
-                  <a class="dropdown-item" href="#" onclick="toggleDiv(15); changeColor(this)">一覧</a>
-              </div>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(14); changeColor(this)">14階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(13); changeColor(this)">13階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(12); changeColor(this)">12階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(11); changeColor(this)">11階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(10); changeColor(this)">10階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(9); changeColor(this)">9階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(8); changeColor(this)">8階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(7); changeColor(this)">7階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(6); changeColor(this)">6階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(5); changeColor(this)">5階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(4); changeColor(this)">4階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(3); changeColor(this)">3階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(2); changeColor(this)">2階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(1); changeColor(this)">1階</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="toggleDiv(15); changeColor(this)">一覧</a></li>
+              </ul>
           </div>
 
             <article class="col-9">
@@ -2767,6 +2749,7 @@
     <!-- Bootstrap JavaScriptと依存するライブラリの読み込み -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../javascript/test.js"></script>
     

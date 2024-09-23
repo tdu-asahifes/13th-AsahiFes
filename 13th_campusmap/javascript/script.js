@@ -47,3 +47,14 @@ document.addEventListener('DOMContentLoaded', function () {
     let ul = document.querySelector('.hscroll ul');
     updateViewarea(ul);
 });
+
+
+function toggleDiv(floor) {
+    console.log('Selected floor:', floor);
+    // 任意の処理をここに記述
+}
+
+function changeColor(element) {
+    // ボタンの色やスタイルを変更する処理
+    console.log('Color changed for:', element.textContent);
+}
