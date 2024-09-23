@@ -84,17 +84,18 @@ transition:all 0.3s ease;
   text-align: center;
   cursor: pointer;
   padding: 12px 12px;
-  background: #f55050;
+  background: #771d24;
   color: #ffffff;
   line-height: 1em;
   transition: .2s;
-  box-shadow: 4px 4px 6px #50f5f5;
-  border: 2px solid #f55050;
+  box-shadow: 4px 4px 6px #f55050;
+  border: 2px solid #771d24;
   text-decoration: none;
 }
 
 .site-button:hover {
-  background-color: #50f5f5;
+  background-color: #ee5b5b;
+  border: 2px solid #771d24;
   /* ホバー時に色が濃くなる */
   color: #1b0a0a;
 }
