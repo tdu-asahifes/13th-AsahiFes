@@ -194,6 +194,27 @@ transition:all 0.3s ease;
   vertical-align: middle;
 }
 
+.kikakuslide{
+  display: flex;
+  overflow-x:scroll;
+}
+.kikaku{
+  display: flex;
+  width: 250px;
+  height: 187px;
+}
+.imgrad{
+  border-radius: 40px;
+  padding: 3px;
+}
+.imgrad:hover{
+  border-radius: 40px;
+  padding: 1px;
+}
+.modalbg{
+  background-color: #393838;
+
+
 .title-frame {
   border: 3px solid #f55050;
   border-radius: 10px;
@@ -247,4 +268,5 @@ transition:all 0.3s ease;
   margin-right:auto;
   margin-left:auto;
   border-radius: 20px;
+
 }
