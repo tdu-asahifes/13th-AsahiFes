@@ -7,6 +7,11 @@
 .navbar .navbar-toggler {
   border-color: white;
 }
+
+.navbar{
+  position:fixed;
+  width:100%;
+}
 .nav-item{
   border-bottom:3px;
   border-bottom:3px solid transparent;
