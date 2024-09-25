@@ -42,37 +42,37 @@ function changeColor(button) {
     });
 }
 
-const apiURL = 'https://script.google.com/macros/s/AKfycbxgQHZFVfbwajL3Pbc3lRIgZQw0SYW2KqnPThPq0WZvrm7vkXbMnirF6cfUQT5YUOza/exec';
-const dynamicList = document.getElementById('dynamicList');
+// const apiURL = 'https://script.google.com/macros/s/AKfycbxgQHZFVfbwajL3Pbc3lRIgZQw0SYW2KqnPThPq0WZvrm7vkXbMnirF6cfUQT5YUOza/exec';
+// const dynamicList = document.getElementById('dynamicList');
 
-async function loadData(roomnumberInput) {
-    const response = await fetch(apiURL);
-    const data = await response.json();
+// async function loadData(roomnumberInput) {
+//     const response = await fetch(apiURL);
+//     const data = await response.json();
 
-    const matchingEntry = data.find(entry => entry.roomnumber === roomnumberInput);
+//     const matchingEntry = data.find(entry => entry.roomnumber === roomnumberInput);
 
-    if (matchingEntry) {
-        const baseHtml = document.querySelector('.spreadsheets--item.js-base');
-        const spreadsheets = document.querySelector('.spreadsheets');
+//     if (matchingEntry) {
+//         const baseHtml = document.querySelector('.spreadsheets--item.js-base');
+//         const spreadsheets = document.querySelector('.spreadsheets');
 
-        // 既存のリストをクリア
-        while (spreadsheets.children.length > 1) {
-            spreadsheets.removeChild(spreadsheets.lastChild);
-        }
+//         // 既存のリストをクリア
+//         while (spreadsheets.children.length > 1) {
+//             spreadsheets.removeChild(spreadsheets.lastChild);
+//         }
 
-        const copy = baseHtml.cloneNode(true);
-        copy.classList.remove('js-base');
-        copy.querySelector('.spreadsheets--building').textContent = matchingEntry.building;
-        copy.querySelector('.spreadsheets--roomnumber').textContent = matchingEntry.roomnumber;
-        copy.querySelector('.spreadsheets--organizationname').textContent = matchingEntry.organizationname;
-        copy.querySelector('.spreadsheets--exprain').innerHTML = matchingEntry.exprain;
-        copy.querySelector('.spreadsheets--janl').src = matchingEntry.janl;
-        copy.querySelector('.spreadsheets--date').src = matchingEntry.date;
-        spreadsheets.appendChild(copy);
-    } else {
-        alert('該当する部屋番号が見つかりませんでした。');
-    }
-}
+//         const copy = baseHtml.cloneNode(true);
+//         copy.classList.remove('js-base');
+//         copy.querySelector('.spreadsheets--building').textContent = matchingEntry.building;
+//         copy.querySelector('.spreadsheets--roomnumber').textContent = matchingEntry.roomnumber;
+//         copy.querySelector('.spreadsheets--organizationname').textContent = matchingEntry.organizationname;
+//         copy.querySelector('.spreadsheets--exprain').innerHTML = matchingEntry.exprain;
+//         copy.querySelector('.spreadsheets--janl').src = matchingEntry.janl;
+//         copy.querySelector('.spreadsheets--date').src = matchingEntry.date;
+//         spreadsheets.appendChild(copy);
+//     } else {
+//         alert('該当する部屋番号が見つかりませんでした。');
+//     }
+// }
 
 function description(clickedElement) {
     const gTag = clickedElement.querySelector('g');
@@ -156,3 +156,40 @@ document.addEventListener('DOMContentLoaded', function () {
     updateViewarea(ul);
     generateList();
 });
+
+
+const apiURL = 'https://script.google.com/macros/s/AKfycbxgQHZFVfbwajL3Pbc3lRIgZQw0SYW2KqnPThPq0WZvrm7vkXbMnirF6cfUQT5YUOza/exec';
+const dynamicList = document.getElementById('dynamicList');
+
+async function loadData(roomnumberInput) {
+    const response = await fetch(apiURL);
+    const data = await response.json();
+
+    const matchingEntry = data.find(entry => entry.roomnumber === roomnumberInput);
+
+    if (matchingEntry) {
+        const baseHtml = document.querySelector('.spreadsheets--item.js-base');
+        const spreadsheets = document.querySelector('.spreadsheets');
+
+        // 既存のリストをクリア
+        while (spreadsheets.children.length > 1) {
+            spreadsheets.removeChild(spreadsheets.lastChild);
+        }
+
+        const copy = baseHtml.cloneNode(true);
+        copy.classList.remove('js-base');
+        copy.querySelector('.spreadsheets--building').textContent = matchingEntry.building;
+        copy.querySelector('.spreadsheets--roomnumber').textContent = matchingEntry.roomnumber;
+        copy.querySelector('.spreadsheets--organizationname').textContent = matchingEntry.organizationname;
+        copy.querySelector('.spreadsheets--exprain').innerHTML = matchingEntry.exprain;
+        copy.querySelector('.spreadsheets--janl').textContent = matchingEntry.janl;
+        copy.querySelector('.spreadsheets--date').textContent = matchingEntry.date;
+        spreadsheets.appendChild(copy);
+
+        // モーダルを開く
+        const modal = new bootstrap.Modal(document.getElementById('dataModal'));
+        modal.show();
+    } else {
+        alert('該当する部屋番号が見つかりませんでした。');
+    }
+}
