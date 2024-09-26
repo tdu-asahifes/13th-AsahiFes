@@ -11,39 +11,41 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-danger bg-grandient">
-        <a class="navbar-brand me-auto ms-3" href="index.html"><img src="images/asahisai.png"
-                style="width:200px; height:auto;"></a>
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg sticky-top bg-thema">
+        <a class="navbar-brand me-auto ms-3" href="index.html"><img src="images/asahisai.png" class="nav-logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto me-3 pb-3px">
+            <ul class="navbar-nav ms-auto me-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="#theme">今年のテーマ</a>
+                    <a class="nav-link" href="../#date">開催日時</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#greeting">ご挨拶</a>
+                    <a class="nav-link" href="../#theme">今年のテーマ</a>
+                </li>
+                <!-- <li class="nav-item">
+            <a class="nav-link" href="#greeting">ご挨拶</a>
+          </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../#guests">ゲスト</a>
+                </li>
+                <!-- <li class="nav-item">
+            <a class="nav-link" href="#events">企画</a>
+          </li> -->
+                <!-- <li class="nav-item">
+            <a class="nav-link" href="#campusmap">キャンパスマップ</a>
+          </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../#companey">協賛企業</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#guests">今年のゲスト</a>
+                    <a class="nav-link" href="../#precautions">諸注意</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#events">企画</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#campusmap">キャンパスマップ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#companey">協賛企業</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#precautions">諸注意</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#accuses">アクセス</a>
+                    <a class="nav-link" href="../#accuses">アクセス</a>
                 </li>
             </ul>
         </div>
@@ -51,7 +53,9 @@
     </nav>
 
     <section id="greeting">
-        <h2 class="text-center">ご挨拶</h2>
+        <div class="title-frame">
+            <div class="title text-center">ご挨拶</div>
+        </div>
         <div class="container p-5">
             <div class="row justify-content-around">
                 <div class="col-lg-4 p-5">
@@ -79,6 +83,25 @@
             </div>
         </div>
     </section>
+    <footer class="bg-thema text-white">
+        <div class="d-flex justify-content-center pt-3">
+            <a href="https://x.com/asahisai" class="text-white mx-5">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/asahisai/" class="text-white mx-5">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/@user-rq1hq1dj7p/featured" class="text-white mx-5">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
+        <hr class="border border-light mt-3">
+        <div class="text-center">
+            <div class="pb-3">&copy; 2024 東京電機大学旭祭実行委員会</div>
+        </div>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
