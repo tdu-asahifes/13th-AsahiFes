@@ -7,33 +7,300 @@
 .navbar .navbar-toggler {
   border-color: white;
 }
-.nav-item{
-  border-bottom:3px;
-  border-bottom:3px solid transparent;
+
+.navbar {
+  position: sticky;
+  width: 100%;
 }
+
+.nav-item {
+  border-bottom: 3px;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar {
+  position: sticky;
+  width: 100%;
+}
+
+.nav-item {
+  border-bottom: 3px;
+  border-bottom: 3px solid transparent;
+}
+
 .navbar-brand img:hover,
-.nav-item:hover{
-border-bottom-color: whitesmoke;
-box-shadow: 0 14px 20px -4px rgba(0,0,0,.25);
-transform: scale(1.1);
-background-color: #c0777e;
-font-weight:bold;
-border-radius: 4px;
-transition:all 0.3s ease;
+.nav-item:hover {
+  border-bottom-color: whitesmoke;
+  box-shadow: 0 14px 20px -4px rgba(0, 0, 0, .25);
+  transform: scale(1.1);
+  background-color: #bb6666;
+
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  border-bottom-color: whitesmoke;
+  box-shadow: 0 14px 20px -4px rgba(0, 0, 0, .25);
+  transform: scale(1.1);
+  background-color: #bb6666;
+
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-  color:white;
+  background-color: #bb6666;
+  /* ヘッダーのリンクにホバーしたときの文字色 */
+  color: white;
+  background-color: #bb6666;
+  /* ヘッダーのリンクにホバーしたときの文字色 */
+  color: white;
 }
 
+.nav-logo {
+  width: 20vw;
+}
+
+
+
+.theme-explanation {
+  border-color: #f55050;
+  border-radius: 10%;
+}
+
+
+.nav-logo {
+  width: 20vw;
+}
+
+
+/*  style="width:300px;" */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* アクセスmap用画像切り替え */
+.svg-section .svg-container {
+  width: 100%;
+  /* 親コンテナはレスポンシブ */
+  text-align: center;
+  /* SVGを中央に配置 */
+}
+
+.svg-section .responsive-svg {
+  width: 100%;
+  /* SVGの幅を親コンテナ全体に設定 */
+  max-width: 400px;
+  /* SVGの最大幅を400pxに設定（デフォルト） */
+  height: auto;
+  /* 自動で高さを調整してアスペクト比を維持 */
+  display: inline-block;
+  /* インラインブロックで中央配置 */
+  transform: scale(1.5);
+  /* SVGを1.5倍にスケールアップ */
+  transform-origin: center;
+  /* 中央からスケーリング */
+}
+
+.modal-button {
+  cursor: pointer;
+  /* ポインタカーソルにする */
+  fill: none;
+  /* 背景を透明にする */
+  stroke: #000;
+  /* 外枠の色 */
+  stroke-width: 2;
+  /* 外枠の幅 */
+  transition: fill 0.3s ease;
+  /* 色の遷移 */
+}
+
+.modal-button:hover {
+  fill: rgba(0, 0, 255, 0.2);
+  /* ホバー時の背景色 */
+}
+
+
+/* 過去サイトがまとめられているnotionに飛ぶためのボタンです */
+
+.site-button {
+  /* margin-top: 3rem; */
+  display: inline-block;
+  border-radius: 60px;
+  font-size: 18pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: #771d24;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .2s;
+  box-shadow: 4px 4px 6px #f55050;
+  border: 2px solid #771d24;
+  text-decoration: none;
+}
+
+.site-button:hover {
+  background-color: #ee5b5b;
+  border: 2px solid #771d24;
+  /* ホバー時に色が濃くなる */
+  color: #1b0a0a;
+}
+
+.site-button svg {
+  margin-left: 8px;
+  /* テキストとアイコンの間隔 */
+  fill: currentColor;
+  /* アイコンの色を親要素の色に合わせる */
+  width: 1.2em;
+  /* アイコンのサイズ */
+  height: 1.2em;
+  /* アイコンのサイズ */
+}
+
+/* mt-3=1に倣って作成してます */
+.mt-24 {
+  margin-top: 8rem;
+}
+
+.mb-15 {
+  margin-bottom: 5rem;
+}
+
+/* タイトル関係　仮で作ったものなのでデザインとかは変更しちゃってください */
+
+.title-frame {
+  border: 3px solid #f55050;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 5vh;
+}
+
+@font-face {
+  font-family: 'BananaFont';
+  src: url('../fonts/YDWbananaslipplus.otf') format('truetype');
+}
+
+.title {
+  font-size: 50px;
+  font-family: "BananaFont";
+  color: #f55050;
+}
+
+/* アクセスmap用画像切り替え */
+.svg-section .svg-container {
+  width: 100%;
+  /* 親コンテナはレスポンシブ */
+  text-align: center;
+  /* SVGを中央に配置 */
+}
+
+.svg-section .responsive-svg {
+  width: 100%;
+  /* SVGの幅を親コンテナ全体に設定 */
+  max-width: 400px;
+  /* SVGの最大幅を400pxに設定（デフォルト） */
+  height: auto;
+  /* 自動で高さを調整してアスペクト比を維持 */
+  display: inline-block;
+  /* インラインブロックで中央配置 */
+  transform: scale(1.5);
+  /* SVGを1.5倍にスケールアップ */
+  transform-origin: center;
+  /* 中央からスケーリング */
+}
+
+.modal-button {
+  cursor: pointer;
+  /* ポインタカーソルにする */
+  fill: none;
+  /* 背景を透明にする */
+  stroke: #000;
+  /* 外枠の色 */
+  stroke-width: 2;
+  /* 外枠の幅 */
+  transition: fill 0.3s ease;
+  /* 色の遷移 */
+}
+
+.modal-button:hover {
+  fill: rgba(0, 0, 255, 0.2);
+  /* ホバー時の背景色 */
+}
+
+
+/* 過去サイトがまとめられているnotionに飛ぶためのボタンです */
+
+.site-button {
+  /* margin-top: 3rem; */
+  display: inline-block;
+  border-radius: 60px;
+  font-size: 18pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: #771d24;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .2s;
+  box-shadow: 4px 4px 6px #f55050;
+  border: 2px solid #771d24;
+  text-decoration: none;
+}
+
+.site-button:hover {
+  background-color: #ee5b5b;
+  border: 2px solid #771d24;
+  /* ホバー時に色が濃くなる */
+  color: #1b0a0a;
+}
+
+.site-button svg {
+  margin-left: 8px;
+  /* テキストとアイコンの間隔 */
+  fill: currentColor;
+  /* アイコンの色を親要素の色に合わせる */
+  width: 1.2em;
+  /* アイコンのサイズ */
+  height: 1.2em;
+  /* アイコンのサイズ */
+}
+
+/* mt-3=1に倣って作成してます */
+.mt-24 {
+  margin-top: 8rem;
+}
+
+.mb-15 {
+  margin-bottom: 5rem;
+}
+
+/* タイトル関係　仮で作ったものなのでデザインとかは変更しちゃってください */
+
+.title-frame {
+  border: 3px solid #f55050;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 5vh;
+}
+
+@font-face {
+  font-family: 'BananaFont';
+  src: url('../fonts/YDWbananaslipplus.otf') format('truetype');
+}
+
+.title {
+  font-size: 50px;
+  font-family: "BananaFont";
+  color: #f55050;
 }
 
 .img-container img {
   max-width: 100px;
   max-height: 100px;
 }
+
 
 .balloon2-left::before {
   content: "";
@@ -56,25 +323,173 @@ transition:all 0.3s ease;
   border-right: 14px solid #6c757d;
 }
 
+.kuruton {
+  list-style: none;
+  text-align: justify;
+}
+
+.kuruton {
+  list-style: none;
+  text-align: justify;
+}
 
 #countdown {
   font-size: 2rem;
   margin-top: 20px;
   display: inline;
 }
+
 .prefix {
   font-size: 1.5rem;
   vertical-align: middle;
 }
+
 .days {
   font-size: 3rem;
   font-weight: bold;
-  color: #dc3545; /* Bootstrapの危険（赤色）の色を使用 */
+  color: #dc3545;
+  /* Bootstrapの危険（赤色）の色を使用 */
   vertical-align: middle;
 }
+
 .suffix {
   font-size: 1.5rem;
   vertical-align: middle;
 }
 
+.title-frame {
+  border: 3px solid #f55050;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 5vh;
+}
 
+.title {
+  font-size: 50px;
+  font-family: "BananaFont";
+  color: #f55050;
+}
+
+.sponsor-images {
+  justify-content: center;
+  align-content: center !important;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: flex; */
+  align-items: center;
+
+}
+
+.sponsor-img {
+  max-width: auto;
+  height: 40px;
+  transition: transform 0.2s;
+
+}
+
+.sponsor-img:hover {
+  transform: scale(1.05);
+}
+
+.title-frame {
+  border: 3px solid #f55050;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 5vh;
+}
+
+.title {
+  font-size: 50px;
+  font-family: "BananaFont";
+  color: #f55050;
+}
+
+.sponsor-images {
+  justify-content: center;
+  align-content: center !important;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: flex; */
+  align-items: center;
+
+}
+
+.sponsor-img {
+  max-width: auto;
+  height: 40px;
+  transition: transform 0.2s;
+
+}
+
+.sponsor-img:hover {
+  transform: scale(1.05);
+}
+
+.fab:hover {
+  color: darkgrey;
+}
+
+.guest-img {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.guest-img:hover {
+  transform: scale(1.05);
+}
+
+.guest-img-tmp {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+}
+
+.bg-thema {
+  background-color: #771d24;
+}
+
+.text-thema {
+  color: #771d24;
+}
+
+.guest-img {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.guest-img:hover {
+  transform: scale(1.05);
+}
+
+.guest-img-tmp {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+}
+
+.bg-thema {
+  background-color: #771d24;
+}
+
+.text-thema {
+  color: #771d24;
+}
+
+.theme-explanation {
+  border-color: #f55050;
+  border-radius: 10%;
+}
+
+.font-GPBT {
+  font-family: "georgiapro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
