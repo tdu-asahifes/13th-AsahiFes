@@ -493,3 +493,126 @@
   font-weight: 700;
   font-style: normal;
 }
+
+.time-slot1 {
+  position: relative;
+  height: 120px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot30 {
+  position: relative;
+  height: 60px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot15 {
+  position: relative;
+  height: 30px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot20 {
+  position: relative;
+  height: 40px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot45 {
+  position: relative;
+  height: 90px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot40 {
+  position: relative;
+  height: 80px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot35 {
+  position: relative;
+  height: 70px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot5 {
+  position: relative;
+  height: 10px;
+  display: flex;
+  padding-left: 10px;
+  font-size: 10px;
+}
+.time-slot10 {
+  position: relative;
+  height: 20px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot25 {
+  position: relative;
+  height: 50px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot5H {
+  position: relative;
+  height: 600px;
+  display: flex;
+  padding-left: 10px;
+}
+.current-time-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 2px solid red;
+  z-index: 1;
+  
+}
+.current-time-line2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 2px solid red;
+  z-index: 1;
+  
+}
+.current-time-lineSpe1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 2px solid red;
+  z-index: 1;
+  
+}
+.current-time-lineSpe2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 2px solid red;
+  z-index: 1;
+  
+}
+.timetable {
+  height: 840px; /* 7時間 × 120px = 840px */
+  position: relative;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.timetableSpe {
+  height: 600px; /* 5時間 × 120px = 600px */
+  position: relative;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.task {
+  width:100%;
+  border: 3px solid #897c7c;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
