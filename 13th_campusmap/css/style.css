@@ -14,6 +14,9 @@ article svg {
     margin: 0 auto 0 auto;
 }
 
+.scroll-bgcolor{
+    background-color: #e0d9d9;
+}
 
 /*スクロールメニュー部分のcss*/
 .hscroll {
@@ -97,6 +100,9 @@ article svg {
     background-color: #9e9a6f;
 }
 
+.btn-color{
+    background-color: #771d24;
+}
 
 .button{background-color: #1b3c65;
     color: #f8e890;

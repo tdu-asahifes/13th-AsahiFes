@@ -74,7 +74,7 @@ async function generateList(targetDiv) {
             li.className = 'text-center';
             li.setAttribute('data-roomnumber', matchingEntry.roomnumber);
             li.innerHTML = `
-                <div class="border border-5 rounded shadow m-3">
+                <div class="border border-5 rounded shadow m-3 scroll-bgcolor">
                     <p class="spreadsheets--organizationname">${matchingEntry.organizationname}</p>
                 </div>
             `;
