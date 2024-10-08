@@ -1,0 +1,116 @@
+.text-gradient {
+    background: -webkit-linear-gradient(315deg, #f31e1e 0%, #f2b022 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: #f31e1e;
+    background: linear-gradient(135deg, #f31e1e 0%, #f2b022 100%);
+}
+
+.hidden-element {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    max-height: 1000px;
+    /* 適切な高さに調整してください */
+}
+
+/* 日本語フォントクラス */
+.japanese-font {
+    font-family: "Arial", sans-serif;
+}
+
+/* styles.css */
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    /* 画面下からの距離を調整 */
+    right: 20px;
+    /* 画面右からの距離を調整 */
+}
+
+.fixed-button a {
+    text-decoration: none;
+    color: #fff;
+    /* ボタンテキストの色 */
+    font-weight: bold;
+    /* ボタンテキストの太さ */
+}
+
+/* モーダル表示用のスタイル */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#ticketButton {
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#ticketButton:hover {
+    transform: scale(1.05);
+}
+
+.tbutton {
+    margin-bottom: 10px;
+}
+
+#ticketButton2 {
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#ticketButton2:hover {
+    transform: scale(1.05);
+}
+
+#ticketButton3 {
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#ticketButton3:hover {
+    transform: scale(1.05);
+}
+
+.space {
+    height: 100px;
+}
+
+.mg-center {
+    margin-right: auto;
+    margin-left: auto;
+}
