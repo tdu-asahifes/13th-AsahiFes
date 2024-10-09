@@ -69,17 +69,6 @@ async function generateList(targetDiv) {
         const dataName = gTag.getAttribute('data-name');
         const matchingEntry = data.find(entry => entry.roomnumber === dataName);
 
-        // if (matchingEntry) {
-        //     const li = document.createElement('li');
-        //     li.className = 'text-center';
-        //     li.setAttribute('data-roomnumber', matchingEntry.roomnumber);
-        //     li.innerHTML = `
-        //         <div class="border border-5 rounded shadow m-3 scroll-bgcolor">
-        //             <p class="spreadsheets--organizationname">${matchingEntry.organizationname}</p>
-        //         </div>
-        //     `;
-        //     dynamicList.appendChild(li);
-        // }
         if (matchingEntry) {
             const li = document.createElement('li');
             li.className = 'text-center';
