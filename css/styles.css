@@ -494,9 +494,22 @@
   font-style: normal;
 }
 
+/*タイムスケジュール関連です*/
 .time-slot1 {
   position: relative;
   height: 120px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot2H {
+  position: relative;
+  height: 240px;
+  display: flex;
+  padding-left: 10px;
+}
+.time-slot2H30 {
+  position: relative;
+  height: 300px;
   display: flex;
   padding-left: 10px;
 }
@@ -597,20 +610,44 @@
   z-index: 1;
   color: red; 
 }
+.current-time-lineGym1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 2px solid red;
+  z-index: 1;
+  color: red; 
+}
+.current-time-lineGym2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 2px solid red;
+  z-index: 1;
+  color: red; 
+}
 .timetable {
   height: 840px; /* 7時間 × 120px = 840px */
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 15px;
 }
 .timetableSpe {
   height: 600px; /* 5時間 × 120px = 600px */
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.timetableGym {
+  height: 480px; /* 4 × 120px = 480px */
+  position: relative;
+  font-size: 16px;
   margin-top: 15px;
 }
 .task {
-  width:100%;
+  width:90%;
   border: 3px solid #897c7c;
   border-radius: 10px;
   margin-left: 10px;
@@ -623,7 +660,7 @@
   z-index: 1;
   left: 0;
   top: 0;
-  width: 97%;
+  width: 99%;
   height: 100%;
   overflow: auto;
   background-color: rgb(0,0,0);
@@ -654,3 +691,7 @@
   text-decoration: none;
   cursor: pointer;
 }
+.timescheduletest{
+width: 90vw;
+}
+/*上よりタイムスケジュール関連です*/

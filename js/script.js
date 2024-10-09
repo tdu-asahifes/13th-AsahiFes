@@ -156,6 +156,61 @@ updateCurrentTimeLineSpe2();
 // 1分ごとに更新
 setInterval(updateCurrentTimeLineSpe2, 60000);
 
+function updateCurrentTimeLineGym1() {
+  const Now = new Date();
+  const hours = Now.getHours();
+  const minutes = Now.getMinutes();
+  let DAY = Now.getDate();
+  const totalMinutes = hours * 60 + minutes;
+  const timetableHeight = 480; //タイムテーブルの高さ
+  const startTime = 13 * 60; // 10:00の分数
+  const endTime = 17 * 60; // 17:00の分数
+
+  const currentTimeLine = document.getElementById('currentTimeLineGym1');
+  
+  if (totalMinutes >= startTime && totalMinutes <= endTime &&DAY == 2) {
+    const currentPosition = ((totalMinutes - startTime) / (endTime - startTime)) * timetableHeight; // 現在位置計算
+    currentTimeLine.style.top = `${currentPosition}px`;
+    currentTimeLine.innerHTML = (hours+":"+minutes);
+    currentTimeLine.style.display = 'block';
+  } else {
+    currentTimeLine.style.display = 'none'; // 時間外はラインを非表示
+  }
+}
+
+// 初期表示時にラインを設定
+updateCurrentTimeLineGym1();
+// 1分ごとに更新
+setInterval(updateCurrentTimeLineGym1, 60000);
+
+function updateCurrentTimeLineGym2() {
+  const Now = new Date();
+  const hours = Now.getHours();
+  const minutes = Now.getMinutes();
+  let DAY = Now.getDate();
+  const totalMinutes = hours * 60 + minutes;
+  const timetableHeight = 480; // タイムテーブルの高さ
+  const startTime = 13 * 60; // 10:00の分数
+  const endTime = 17 * 60; // 17:00の分数
+
+  const currentTimeLine2 = document.getElementById('currentTimeLineGym2');
+
+  if (totalMinutes >= startTime && totalMinutes <= endTime && DAY == 3) {
+    const currentPosition = ((totalMinutes - startTime) / (endTime - startTime)) * timetableHeight; // 現在位置計算
+    currentTimeLine2.style.top = `${currentPosition}px`;
+    currentTimeLine2.innerHTML = (hours+":"+minutes);
+    currentTimeLine2.style.display = 'block';
+  } else {
+    currentTimeLine2.style.display = 'none'; // 時間外はラインを非表示
+  }
+}
+
+// 初期表示時にラインを設定
+updateCurrentTimeLineGym2();
+// 1分ごとに更新
+setInterval(updateCurrentTimeLineGym2, 60000);
+
+
 const eventDetails = {
   "オープニングセレモニー": "オープニングセレモニーでは、特別ゲストの挨拶があります。",
   "ダンス部": "ダンス部のパフォーマンスでは、さまざまなジャンルのダンスが披露されます。",
