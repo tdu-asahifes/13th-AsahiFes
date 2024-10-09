@@ -125,32 +125,34 @@
     </div>
   </nav>
   <main>
-
     <div class="modal fade" id="dataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content bg-dark text-white">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">部屋情報</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <ul class="spreadsheets">
-              <li class="spreadsheets--item js-base">
-                <p class="spreadsheets--building"></p>
-                <p class="spreadsheets--roomnumber"></p>
-                <p class="spreadsheets--organizationname"></p>
-                <p class="spreadsheets--exprain"></p>
+      <div class="modal-dialog modal-dialog-centered"> <!-- 画面縦方向にも中央に配置 -->
+        <div class="modal-content bg-white text-dark p-4"> <!-- モーダル本体に余白を追加 -->
+          <div class="modal-body text-center"> <!-- モーダル本文も中央揃え -->
+            <div class="spreadsheets text-center px-auto">
+              <div class="spreadsheets--item js-base mx-auto">
+                <!-- タイトルと詳細情報にメリハリをつける -->
+                <h6 class="spreadsheets--organizationname"></h6>
+                <p class="spreadsheets--roomnumber"></p> <!-- 部屋番号は標準表示 -->
+                <h6 class="text-primary mt-3">ジャンル</h6>
                 <p class="spreadsheets--janl"></p>
+
+                <h6 class="text-primary mt-3">企画紹介</h6>
+                <p class="spreadsheets--exprain"></p>
+
+                <h6 class="text-primary mt-3">日時</h6>
                 <p class="spreadsheets--date"></p>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer justify-content-center"> <!-- ボタンを中央に配置 -->
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
           </div>
         </div>
       </div>
     </div>
+
+
 
 
 
@@ -196,7 +198,7 @@
 
     <article class="mt-2">
       <div id="div15" class="hidden img-fluid">
-       
+
       </div>
       <div id="div14" class="hidden img-fluid text-center">
         <h2>１４階</h2>
@@ -3802,13 +3804,7 @@
           </g>
         </svg>
       </div>
-      <!-- 他のdivも同様に続く -->
-      <div id="myModal" class="modal">
-        <div class="modal-content mt-5">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <p id="modalContent"></p>
-        </div>
-      </div>
+      
     </article>
 
 

@@ -69,17 +69,40 @@ async function generateList(targetDiv) {
         const dataName = gTag.getAttribute('data-name');
         const matchingEntry = data.find(entry => entry.roomnumber === dataName);
 
+        // if (matchingEntry) {
+        //     const li = document.createElement('li');
+        //     li.className = 'text-center';
+        //     li.setAttribute('data-roomnumber', matchingEntry.roomnumber);
+        //     li.innerHTML = `
+        //         <div class="border border-5 rounded shadow m-3 scroll-bgcolor">
+        //             <p class="spreadsheets--organizationname">${matchingEntry.organizationname}</p>
+        //         </div>
+        //     `;
+        //     dynamicList.appendChild(li);
+        // }
         if (matchingEntry) {
             const li = document.createElement('li');
             li.className = 'text-center';
             li.setAttribute('data-roomnumber', matchingEntry.roomnumber);
+        
+            // クリックイベントを追加してモーダルを開く
             li.innerHTML = `
                 <div class="border border-5 rounded shadow m-3 scroll-bgcolor">
-                    <p class="spreadsheets--organizationname">${matchingEntry.organizationname}</p>
+                    <a href="javascript:void(0)" class="organization-link">
+                        <p class="spreadsheets--organizationname">${matchingEntry.organizationname}</p>
+                    </a>
                 </div>
             `;
+        
+            // モーダル表示のためのクリックイベントリスナーを追加
+            li.querySelector('.organization-link').addEventListener('click', () => {
+                // 部屋番号に基づいてデータを読み込み、モーダルを開く
+                loadData(matchingEntry.roomnumber);
+            });
+        
             dynamicList.appendChild(li);
         }
+        
     });
 }
 
@@ -148,7 +171,7 @@ async function loadData(roomnumberInput) {
 
         const copy = baseHtml.cloneNode(true);
         copy.classList.remove('js-base');
-        copy.querySelector('.spreadsheets--building').textContent = matchingEntry.building;
+        // copy.querySelector('.spreadsheets--building').textContent = matchingEntry.building;
         copy.querySelector('.spreadsheets--roomnumber').textContent = matchingEntry.roomnumber;
         copy.querySelector('.spreadsheets--organizationname').textContent = matchingEntry.organizationname;
         copy.querySelector('.spreadsheets--exprain').innerHTML = matchingEntry.exprain;
