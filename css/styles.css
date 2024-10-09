@@ -568,7 +568,7 @@
   top: 0;
   border-top: 2px solid red;
   z-index: 1;
-  
+  color: red; 
 }
 .current-time-line2 {
   position: absolute;
@@ -577,7 +577,7 @@
   top: 0;
   border-top: 2px solid red;
   z-index: 1;
-  
+  color: red; 
 }
 .current-time-lineSpe1 {
   position: absolute;
@@ -586,7 +586,7 @@
   top: 0;
   border-top: 2px solid red;
   z-index: 1;
-  
+  color: red; 
 }
 .current-time-lineSpe2 {
   position: absolute;
@@ -595,7 +595,7 @@
   top: 0;
   border-top: 2px solid red;
   z-index: 1;
-  
+  color: red; 
 }
 .timetable {
   height: 840px; /* 7時間 × 120px = 840px */
@@ -614,5 +614,43 @@
   border: 3px solid #897c7c;
   border-radius: 10px;
   margin-left: 10px;
-  text-align: center;
+  display: grid; /* グリッドレイアウトを適用 */
+  place-items: center; /* 上下左右中央寄せ */
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 97%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin:  40vh auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-size: medium;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #362d2d;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

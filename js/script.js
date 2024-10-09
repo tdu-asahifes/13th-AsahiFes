@@ -155,3 +155,37 @@ function updateCurrentTimeLineSpe2() {
 updateCurrentTimeLineSpe2();
 // 1分ごとに更新
 setInterval(updateCurrentTimeLineSpe2, 60000);
+
+const eventDetails = {
+  "オープニングセレモニー": "オープニングセレモニーでは、特別ゲストの挨拶があります。",
+  "ダンス部": "ダンス部のパフォーマンスでは、さまざまなジャンルのダンスが披露されます。",
+  "演劇部": "演劇部による劇の上演があります。ユーモア満載のストーリーです。",
+  "コーストジャズオーケストラ部": "コーストジャズオーケストラ部の生演奏をお楽しみください。",
+  "グリー倶楽部": "グリー倶楽部による美しい合唱があります。",
+  "吹奏楽同好会": "吹奏楽同好会の演奏は迫力満点です。",
+  "モダンジャズ研究部": "モダンジャズ研究部のスリリングな演奏をお楽しみください。",
+  "転換期間": "次のパフォーマンスまでの休憩時間です。",
+  "お笑いライブ": "お笑いライブで楽しいひとときをお過ごしください。",
+  "優秀団体表彰式": "優秀団体の表彰式を行います。",
+  "管楽器部": "管楽器を演奏",
+  "PLOWLYNX": "PLOWLYNX",
+  "DJ部": "djdj",
+};
+
+function openModal(eventName) {
+  const detail = eventDetails[eventName] || "詳細情報はありません。";
+  document.getElementById("modal-text").innerText = detail;
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
+// モーダルの外をクリックしたときに閉じる
+window.onclick = function(event) {
+  const modal = document.getElementById("modal");
+  if (event.target === modal) {
+      closeModal();
+  }
+}
