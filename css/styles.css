@@ -82,7 +82,8 @@
 
 /* ボタンの色をホバー時に変更 */
 .btn-rect {
-  transition: fill 0.3s; /* スムーズな変化 */
+  transition: fill 0.3s;
+  /* スムーズな変化 */
 }
 
 /* ホバー時の色変更 */
@@ -91,7 +92,7 @@
 #button-link-3:hover .btn-rect,
 #button-link-4:hover .btn-rect,
 #button-link-5:hover .btn-rect {
-  fill: #f55050; 
+  fill: #f55050;
 }
 
 /* テキストのホバー時の色変更 */
@@ -100,30 +101,37 @@
 #button-link-3:hover .btn-text,
 #button-link-4:hover .btn-text,
 #button-link-5:hover .btn-text {
-  fill: black; 
+  fill: black;
 }
 
 /* モーダルの背景色とテキストの色をカスタマイズ */
 .modal-content {
-  background-color: #f0f8ff; /* モーダル全体の背景色 */
-  color: #333; /* テキストの色 */
+  background-color: #f0f8ff;
+  /* モーダル全体の背景色 */
+  color: #333;
+  /* テキストの色 */
 }
 
 /* モーダルヘッダーのカスタマイズ */
 .modal-header {
-  background-color: #771d24; /* ヘッダーの背景色 */
-  color: white; /* ヘッダーのテキスト色 */
+  background-color: #771d24;
+  /* ヘッダーの背景色 */
+  color: white;
+  /* ヘッダーのテキスト色 */
 }
 
 /* モーダルボディのカスタマイズ */
 .modal-body {
-  background-color: #343a40; /* ボディの背景色 */
-  color: #333; /* ボディのテキスト色 */
+  background-color: #343a40;
+  /* ボディの背景色 */
+  color: #333;
+  /* ボディのテキスト色 */
 }
 
 /* モーダルフッターのカスタマイズ */
 .modal-footer {
-  background-color: #771d24; /* フッターの背景色 */
+  background-color: #771d24;
+  /* フッターの背景色 */
 }
 
 
