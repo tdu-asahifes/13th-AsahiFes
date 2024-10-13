@@ -80,43 +80,6 @@
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* アクセスmap用画像切り替え */
-.svg-section .svg-container {
-  width: 100%;
-  /* 親コンテナはレスポンシブ */
-  text-align: center;
-  /* SVGを中央に配置 */
-}
-
-
-/* SVGは常に100%の幅を保持 */
-svg {
-  width: 100%; /* SVGを親要素の幅に合わせる */
-  height: auto; /* 高さを自動調整 */
-}
-
-/* ボタンスタイル */
-.btn-rect {
-  cursor: pointer;
-}
-
-/* メディアクエリ: 画面サイズに応じた調整 */
-@media (max-width: 600px) {
-  .btn-text {
-    font-size: 16px; /* スマホ用フォントサイズ */
-  }
-
-  .btn-rect {
-    width: 80px; /* スマホ用ボタン幅 */
-    height: 40px; /* スマホ用ボタン高さ */
-  }
-
-  .popup {
-    width: 200px; /* スマホの場合の幅 */
-  }
-}
-
-
 /* ボタンの色をホバー時に変更 */
 .btn-rect {
   transition: fill 0.3s; /* スムーズな変化 */
@@ -128,7 +91,7 @@ svg {
 #button-link-3:hover .btn-rect,
 #button-link-4:hover .btn-rect,
 #button-link-5:hover .btn-rect {
-  fill: #ffa500; /* オレンジ色に変更 */
+  fill: #f55050; 
 }
 
 /* テキストのホバー時の色変更 */
@@ -137,35 +100,32 @@ svg {
 #button-link-3:hover .btn-text,
 #button-link-4:hover .btn-text,
 #button-link-5:hover .btn-text {
-  fill: gray; /* 白に変更 */
+  fill: black; 
 }
 
-/* オーバーレイの設定 */
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  z-index: 1000; /* 最前面に表示するための z-index */
+/* モーダルの背景色とテキストの色をカスタマイズ */
+.modal-content {
+  background-color: #f0f8ff; /* モーダル全体の背景色 */
+  color: #333; /* テキストの色 */
 }
 
-/* ポップアップの設定 */
-#popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  display: none;
-  z-index: 1001; /* オーバーレイより前面に表示 */
-  width: 500px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+/* モーダルヘッダーのカスタマイズ */
+.modal-header {
+  background-color: #771d24; /* ヘッダーの背景色 */
+  color: white; /* ヘッダーのテキスト色 */
 }
+
+/* モーダルボディのカスタマイズ */
+.modal-body {
+  background-color: #343a40; /* ボディの背景色 */
+  color: #333; /* ボディのテキスト色 */
+}
+
+/* モーダルフッターのカスタマイズ */
+.modal-footer {
+  background-color: #771d24; /* フッターの背景色 */
+}
+
 
 /* ポップアップ内のボタン */
 #popup button {
