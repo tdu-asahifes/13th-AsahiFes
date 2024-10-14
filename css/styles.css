@@ -147,7 +147,11 @@ a[id^="button-link"] {
   cursor: pointer;
 }
 
-
+@media (max-width: 576px) {
+  .map-container iframe {
+    pointer-events: none; /* モバイルでのタッチ操作を無効化 */
+  }
+}
 
 .svg-section .responsive-svg {
   width: 100%;
