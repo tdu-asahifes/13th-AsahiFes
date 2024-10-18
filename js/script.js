@@ -54,19 +54,68 @@ function updateCurrentTimeLine() {
   const minutes = Now.getMinutes();
   let DAY = Now.getDate();
   const totalMinutes = hours * 60 + minutes;
-  const timetableHeight = 840; //タイムテーブルの高さ
+  const timetableHeightOut = 840; //タイムテーブルの高さ
+  const timetableHeightSpe = 600;
+  const timetableHeightGym = 480;
   const startTime = 10 * 60; // 10:00の分数
   const endTime = 17 * 60; // 17:00の分数
+  const startTimeGym = 13 * 60;
+  const endTimeSpe = 15 * 60;
 
-  const currentTimeLine = document.getElementById('currentTimeLine');
-  
-  if (totalMinutes >= startTime && totalMinutes <= endTime &&DAY == 2) {
-    const currentPosition = ((totalMinutes - startTime) / (endTime - startTime)) * timetableHeight; // 現在位置計算
-    currentTimeLine.style.top = `${currentPosition}px`;
-    currentTimeLine.innerHTML = (hours+":"+minutes);
-    currentTimeLine.style.display = 'block';
+  const currentTimeLineOut1 = document.getElementById('currentTimeLineOut1');
+  const currentTimeLineSpe1 = document.getElementById('currentTimeLineSpe1');
+  const currentTimeLineGym1 = document.getElementById('currentTimeLineGym1');
+  const currentTimeLineOut2 = document.getElementById('currentTimeLineOut2');
+  const currentTimeLineSpe2 = document.getElementById('currentTimeLineSpe2');
+  const currentTimeLineGym2 = document.getElementById('currentTimeLineGym2');
+
+  if (totalMinutes >= startTime && totalMinutes <= endTime && DAY == 2) {
+    const currentPositionOut1 = ((totalMinutes - startTime) / (endTime - startTime)) * timetableHeightOut; // 現在位置計算
+    currentTimeLineOut1.style.top = `${currentPositionOut1}px`;
+    currentTimeLineOut1.innerHTML = (hours + ":" + minutes);
+    currentTimeLineOut1.style.display = 'block';
   } else {
-    currentTimeLine.style.display = 'none'; // 時間外はラインを非表示
+    currentTimeLineOut1.style.display = 'none'; // 時間外はラインを非表示
+  }
+  if (totalMinutes >= startTime && totalMinutes <= endTime && DAY == 3) {
+    const currentPositionOut2 = ((totalMinutes - startTime) / (endTime - startTime)) * timetableHeightOut; // 現在位置計算
+    currentTimeLineOut2.style.top = `${currentPositionOut2}px`;
+    currentTimeLineOut2.innerHTML = (hours + ":" + minutes);
+    currentTimeLineOut2.style.display = 'block';
+  } else {
+    currentTimeLineOut2.style.display = 'none'; // 時間外はラインを非表示
+  }
+  if (totalMinutes >= startTime && totalMinutes <= endTimeSpe && DAY == 2) {
+    const currentPositionSpe1 = ((totalMinutes - startTime) / (endTimeSpe - startTime)) * timetableHeightSpe;
+    currentTimeLineSpe1.style.top = `${currentPositionSpe1}px`;
+    currentTimeLineSpe1.innerHTML = (hours + ":" + minutes);
+    currentTimeLineSpe1.style.display = 'block';
+  } else {
+    currentTimeLineSpe1.style.display = 'none';
+  }
+  if (totalMinutes >= startTime && totalMinutes <= endTimeSpe && DAY == 3) {
+    const currentPositionSpe2 = ((totalMinutes - startTime) / (endTimeSpe - startTime)) * timetableHeightSpe;
+    currentTimeLineSpe2.style.top = `${currentPositionSpe2}px`;
+    currentTimeLineSpe2.innerHTML = (hours + ":" + minutes);
+    currentTimeLineSpe2.style.display = 'block';
+  } else {
+    currentTimeLineSpe2.style.display = 'none';
+  }
+  if (totalMinutes >= startTimeGym && totalMinutes <= endTime && DAY == 2) {
+    const currentPositionGym1 = ((totalMinutes - startTimeGym) / (endTime - startTimeGym)) * timetableHeightGym;
+    currentTimeLineGym1.style.top = `${currentPositionGym1}px`;
+    currentTimeLineGym1.innerHTML = (hours + ":" + minutes);
+    currentTimeLineGym1.style.display = 'block';
+  } else {
+    currentTimeLineGym1.style.display = 'none';
+  }
+  if (totalMinutes >= startTimeGym && totalMinutes <= endTime && DAY == 3) {
+    const currentPositionGym2 = ((totalMinutes - startTimeGym) / (endTime - startTimeGym)) * timetableHeightGym;
+    currentTimeLineGym2.style.top = `${currentPositionGym2}px`;
+    currentTimeLineGym2.innerHTML = (hours + ":" + minutes);
+    currentTimeLineGym2.style.display = 'block';
+  } else {
+    currentTimeLineGym2.style.display = 'none';
   }
 }
 
@@ -74,142 +123,6 @@ function updateCurrentTimeLine() {
 updateCurrentTimeLine();
 // 1分ごとに更新
 setInterval(updateCurrentTimeLine, 60000);
-
-function updateCurrentTimeLine2() {
-  const Now = new Date();
-  const hours = Now.getHours();
-  const minutes = Now.getMinutes();
-  let DAY = Now.getDate();
-  const totalMinutes = hours * 60 + minutes;
-  const timetableHeight = 840; // タイムテーブルの高さ
-  const startTime = 10 * 60; // 10:00の分数
-  const endTime = 17 * 60; // 17:00の分数
-
-  const currentTimeLine2 = document.getElementById('currentTimeLine2');
-
-  if (totalMinutes >= startTime && totalMinutes <= endTime && DAY == 3) {
-    const currentPosition = ((totalMinutes - startTime) / (endTime - startTime)) * timetableHeight; // 現在位置計算
-    currentTimeLine2.style.top = `${currentPosition}px`;
-    currentTimeLine2.innerHTML = (hours+":"+minutes);
-    currentTimeLine2.style.display = 'block';
-  } else {
-    currentTimeLine2.style.display = 'none'; // 時間外はラインを非表示
-  }
-}
-
-// 初期表示時にラインを設定
-updateCurrentTimeLine2();
-// 1分ごとに更新
-setInterval(updateCurrentTimeLine2, 60000);
-
-function updateCurrentTimeLineSpe1() {
-  const Now = new Date();
-  const hours = Now.getHours();
-  const minutes = Now.getMinutes();
-  let DAY = Now.getDate();
-  const totalMinutes = hours * 60 + minutes;
-  const timetableHeight = 600; //タイムテーブルの高さ
-  const startTime = 10 * 60; // 10:00の分数
-  const endTime = 15 * 60; // 17:00の分数
-
-  const currentTimeLine = document.getElementById('currentTimeLineSpe1');
-  
-  if (totalMinutes >= startTime && totalMinutes <= endTime &&DAY == 2) {
-    const currentPosition = ((totalMinutes - startTime) / (endTime - startTime)) * timetableHeight; // 現在位置計算
-    currentTimeLine.style.top = `${currentPosition}px`;
-    currentTimeLine.innerHTML = (hours+":"+minutes);
-    currentTimeLine.style.display = 'block';
-  } else {
-    currentTimeLine.style.display = 'none'; // 時間外はラインを非表示
-  }
-}
-
-// 初期表示時にラインを設定
-updateCurrentTimeLineSpe1();
-// 1分ごとに更新
-setInterval(updateCurrentTimeLineSpe1, 60000);
-
-function updateCurrentTimeLineSpe2() {
-  const Now = new Date();
-  const hours = Now.getHours();
-  const minutes = Now.getMinutes();
-  let DAY = Now.getDate();
-  const totalMinutes = hours * 60 + minutes;
-  const timetableHeight = 600; //タイムテーブルの高さ
-  const startTime = 10 * 60; // 10:00の分数
-  const endTime = 15 * 60; // 17:00の分数
-
-  const currentTimeLine = document.getElementById('currentTimeLineSpe2');
-  
-  if (totalMinutes >= startTime && totalMinutes <= endTime &&DAY == 3) {
-    const currentPosition = ((totalMinutes - startTime) / (endTime - startTime)) * timetableHeight; // 現在位置計算
-    currentTimeLine.style.top = `${currentPosition}px`;
-    currentTimeLine.innerHTML = (hours+":"+minutes);
-    currentTimeLine.style.display = 'block';
-  } else {
-    currentTimeLine.style.display = 'none'; // 時間外はラインを非表示
-  }
-}
-
-// 初期表示時にラインを設定
-updateCurrentTimeLineSpe2();
-// 1分ごとに更新
-setInterval(updateCurrentTimeLineSpe2, 60000);
-
-function updateCurrentTimeLineGym1() {
-  const Now = new Date();
-  const hours = Now.getHours();
-  const minutes = Now.getMinutes();
-  let DAY = Now.getDate();
-  const totalMinutes = hours * 60 + minutes;
-  const timetableHeight = 480; //タイムテーブルの高さ
-  const startTime = 13 * 60; // 10:00の分数
-  const endTime = 17 * 60; // 17:00の分数
-
-  const currentTimeLine = document.getElementById('currentTimeLineGym1');
-  
-  if (totalMinutes >= startTime && totalMinutes <= endTime &&DAY == 2) {
-    const currentPosition = ((totalMinutes - startTime) / (endTime - startTime)) * timetableHeight; // 現在位置計算
-    currentTimeLine.style.top = `${currentPosition}px`;
-    currentTimeLine.innerHTML = (hours+":"+minutes);
-    currentTimeLine.style.display = 'block';
-  } else {
-    currentTimeLine.style.display = 'none'; // 時間外はラインを非表示
-  }
-}
-
-// 初期表示時にラインを設定
-updateCurrentTimeLineGym1();
-// 1分ごとに更新
-setInterval(updateCurrentTimeLineGym1, 60000);
-
-function updateCurrentTimeLineGym2() {
-  const Now = new Date();
-  const hours = Now.getHours();
-  const minutes = Now.getMinutes();
-  let DAY = Now.getDate();
-  const totalMinutes = hours * 60 + minutes;
-  const timetableHeight = 480; // タイムテーブルの高さ
-  const startTime = 13 * 60; // 10:00の分数
-  const endTime = 17 * 60; // 17:00の分数
-
-  const currentTimeLine2 = document.getElementById('currentTimeLineGym2');
-
-  if (totalMinutes >= startTime && totalMinutes <= endTime && DAY == 3) {
-    const currentPosition = ((totalMinutes - startTime) / (endTime - startTime)) * timetableHeight; // 現在位置計算
-    currentTimeLine2.style.top = `${currentPosition}px`;
-    currentTimeLine2.innerHTML = (hours+":"+minutes);
-    currentTimeLine2.style.display = 'block';
-  } else {
-    currentTimeLine2.style.display = 'none'; // 時間外はラインを非表示
-  }
-}
-
-// 初期表示時にラインを設定
-updateCurrentTimeLineGym2();
-// 1分ごとに更新
-setInterval(updateCurrentTimeLineGym2, 60000);
-
 
 const eventDetails = {
   "オープニングセレモニー": "オープニングセレモニーでは、特別ゲストの挨拶があります。",
@@ -238,9 +151,12 @@ function closeModal() {
 }
 
 // モーダルの外をクリックしたときに閉じる
-window.onclick = function(event) {
+window.onclick = function (event) {
   const modal = document.getElementById("modal");
   if (event.target === modal) {
-      closeModal();
+    closeModal();
   }
 }
+
+
+

@@ -499,127 +499,82 @@
   position: relative;
   height: 120px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot2H {
   position: relative;
   height: 240px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot2H30 {
   position: relative;
   height: 300px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot30 {
   position: relative;
   height: 60px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot15 {
   position: relative;
   height: 30px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot20 {
   position: relative;
   height: 40px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot45 {
   position: relative;
   height: 90px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot40 {
   position: relative;
   height: 80px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot35 {
   position: relative;
   height: 70px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot5 {
   position: relative;
   height: 10px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
   font-size: 10px;
 }
 .time-slot10 {
   position: relative;
   height: 20px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot25 {
   position: relative;
   height: 50px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .time-slot5H {
   position: relative;
   height: 600px;
   display: flex;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .current-time-line {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  border-top: 2px solid red;
-  z-index: 1;
-  color: red; 
-}
-.current-time-line2 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  border-top: 2px solid red;
-  z-index: 1;
-  color: red; 
-}
-.current-time-lineSpe1 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  border-top: 2px solid red;
-  z-index: 1;
-  color: red; 
-}
-.current-time-lineSpe2 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  border-top: 2px solid red;
-  z-index: 1;
-  color: red; 
-}
-.current-time-lineGym1 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  border-top: 2px solid red;
-  z-index: 1;
-  color: red; 
-}
-.current-time-lineGym2 {
   position: absolute;
   left: 0;
   right: 0;
@@ -690,8 +645,5 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-.timescheduletest{
-width: 90vw;
 }
 /*上よりタイムスケジュール関連です*/
