@@ -1,3 +1,8 @@
+.navbar {
+  background-color: #f55050;
+  /* ヘッダーの背景色 */
+}
+
 .navbar-brand,
 .nav-link,
 .navbar-toggler-icon {
@@ -28,6 +33,7 @@
   border-bottom: 3px solid transparent;
 }
 
+
 .navbar-brand img:hover,
 .nav-item:hover {
   border-bottom-color: whitesmoke;
@@ -44,9 +50,6 @@
   box-shadow: 0 14px 20px -4px rgba(0, 0, 0, .25);
   transform: scale(1.1);
   background-color: #bb6666;
-
-  border-radius: 4px;
-  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
@@ -335,6 +338,7 @@
 .kuruton {
   list-style: none;
   text-align: justify;
+  text-align: justify;
 }
 
 #countdown {
@@ -343,18 +347,23 @@
   display: inline;
 }
 
+
 .prefix {
   font-size: 1.5rem;
   vertical-align: middle;
 }
+
 
 .days {
   font-size: 3rem;
   font-weight: bold;
   color: #dc3545;
   /* Bootstrapの危険（赤色）の色を使用 */
+  color: #dc3545;
+  /* Bootstrapの危険（赤色）の色を使用 */
   vertical-align: middle;
 }
+
 
 .suffix {
   font-size: 1.5rem;
@@ -372,6 +381,10 @@
   font-size: 50px;
   font-family: "BananaFont";
   color: #f55050;
+}
+.kikakuslide {
+  display: flex;
+  overflow-x: scroll;
 }
 
 .sponsor-images {
@@ -393,6 +406,26 @@
 
 .sponsor-img:hover {
   transform: scale(1.05);
+}
+
+.kikaku {
+  display: flex;
+  width: 250px;
+  height: 187px;
+}
+
+.imgrad {
+  border-radius: 40px;
+  padding: 3px;
+}
+
+.imgrad:hover {
+  border-radius: 40px;
+  padding: 1px;
+}
+
+.modalbg {
+  background-color: #393838;
 }
 
 .title-frame {
