@@ -38,8 +38,17 @@ setInterval(countdown, 1000);
 
 
 
-// モーダル表示時に画像を設定する
-$('#exampleModal').on('show.bs.modal', function (event) {
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(function (navLink) {
+    navLink.addEventListener('click', function () {
+      var navbarCollapse = document.querySelector('.navbar-collapse');
+      var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false
+      });
+      bsCollapse.hide(); // メニューを閉じる
+    });
+  });
+
+  $('#exampleModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget); // クリックした画像
     var modalImageSrc = button.data('modal-image'); // データ属性からモーダル画像のURLを取得
     var modal = $(this);
