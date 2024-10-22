@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 338.62 570.85">
+  <defs>
+    <style>
+      .cls-1-2-6, .cls-2-2-6, .cls-3-2-6, .cls-4-2-6, .cls-5-2-6, .cls-6-2-6, .cls-7-2-6, .cls-8-2-6, .cls-9-2-6, .cls-10-2-6, .cls-11-2-6, .cls-12-2-6, .cls-13-2-6, .cls-14-2-6, .cls-15-2-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1-2-6, .cls-2-2-6, .cls-3-2-6, .cls-4-2-6, .cls-5-2-6, .cls-6-2-6, .cls-8-2-6, .cls-9-2-6, .cls-11-2-6, .cls-12-2-6, .cls-13-2-6, .cls-14-2-6, .cls-15-2-6 {
+        stroke: #231815;
+      }
+
+      .cls-1-2-6, .cls-3-2-6, .cls-5-2-6, .cls-6-2-6, .cls-9-2-6, .cls-11-2-6, .cls-12-2-6, .cls-14-2-6, .cls-15-2-6 {
+        fill: none;
+      }
+
+      .cls-2-2-6 {
+        stroke-width: 5px;
+      }
+
+      .cls-2-2-6, .cls-4-2-6, .cls-8-2-6 {
+        fill: #231815;
+      }
+
+      .cls-3-2-6 {
+        stroke-width: 13px;
+      }
+
+      .cls-4-2-6 {
+        stroke-width: 4px;
+      }
+
+      .cls-5-2-6, .cls-10-2-6 {
+        stroke-width: 2px;
+      }
+
+      .cls-6-2-6 {
+        stroke-width: 11px;
+      }
+
+      .cls-7-2-6 {
+        fill: #761923;
+        stroke: #595757;
+      }
+
+      .cls-16-2-6 {
+        fill: #dcdddd;
+        font-family: KozGoPr6N-Regular-90ms-RKSJ-H, 'Kozuka Gothic Pr6N';
+        font-size: 16px;
+      }
+
+      .cls-9-2-6 {
+        stroke-width: 15px;
+      }
+
+      .cls-10-2-6 {
+        fill: #333;
+        stroke: #020202;
+      }
+
+      .cls-11-2-6 {
+        stroke-width: 7px;
+      }
+
+      .cls-12-2-6 {
+        stroke-width: 3px;
+      }
+
+      .cls-13-2-6 {
+        fill: #ccc;
+      }
+
+      .cls-13-2-6, .cls-14-2-6 {
+        stroke-width: 12px;
+      }
+
+      .cls-15-2-6 {
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_5" data-name="レイヤー 5">
+    
+  </g>
+  <g id="_レイヤー_3" data-name="レイヤー 3">
+    <line class="cls-5-2-6" x1="332.9" y1="5.3" x2="5.69" y2="5.3"/>
+    <line class="cls-5-2-6" x1="332.9" y1="566.78" x2="332.9" y2="4.34"/>
+    <line class="cls-5-2-6" x1="5.69" y1="565.8" x2="332.9" y2="565.8"/>
+    <line class="cls-5-2-6" x1="6.32" y1="207.97" x2="6.32" y2="359.86"/>
+  </g>
+  <g id="_レイヤー_6" data-name="レイヤー 6">
+    <g>
+      
+    </g>
+  </g>
+  <g id="_2601" data-name="2601">
+    <rect class="cls-7-2-6" x="213.24" y="5.73" width="118.64" height="197.74"/>
+    <text class="cls-16-2-6" transform="translate(242.28 112.6) scale(.94 1)"><tspan x="0" y="0">２６０１</tspan></text>
+  </g>
+  <g id="_2602" data-name="2602">
+    <rect class="cls-7-2-6" x="213.07" y="205.83" width="118.64" height="161.43"/>
+    <text class="cls-16-2-6" transform="translate(240.76 294.62) scale(.94 1)"><tspan x="0" y="0">２６０２</tspan></text>
+  </g>
+  <g id="_2603" data-name="2603">
+    <rect class="cls-7-2-6" x="213.24" y="368.26" width="118.64" height="196.52"/>
+    <text class="cls-16-2-6" transform="translate(242.63 467.41) scale(.94 1)"><tspan x="0" y="0">２６０３</tspan></text>
+  </g>
+  <g id="_2604" data-name="2604">
+    <rect class="cls-7-2-6" x="6.32" y="364.04" width="118.03" height="201.04"/>
+    <text class="cls-16-2-6" transform="translate(37.33 470.61) scale(.94 1)"><tspan x="0" y="0">２６０４</tspan></text>
+  </g>
+  <g id="_2605" data-name="2605">
+    <rect class="cls-7-2-6" x="6.32" y="5.47" width="118.37" height="199.45"/>
+    <text class="cls-16-2-6" transform="translate(33.66 109.79) scale(.94 1)"><tspan x="0" y="0">２６０５</tspan></text>
+  </g>
+  <g id="_レイヤー_12" data-name="レイヤー 12">
+    <line class="cls-5-2-6" x1="212.23" y1="5.47" x2="212.23" y2="11.67"/>
+    <line class="cls-5-2-6" x1="212.23" y1="24.75" x2="212.23" y2="187.57"/>
+    <line class="cls-5-2-6" x1="212.23" y1="197.42" x2="212.23" y2="211.52"/>
+    <line class="cls-5-2-6" x1="212.23" y1="359.49" x2="212.23" y2="373.19"/>
+    <line class="cls-5-2-6" x1="212.23" y1="382.22" x2="212.23" y2="545.64"/>
+    <line class="cls-5-2-6" x1="212.23" y1="560.4" x2="212.23" y2="565.97"/>
+    <line class="cls-13-2-6" x1="6.32" y1="207.97" x2="126.29" y2="207.97"/>
+    <line class="cls-14-2-6" x1="6.32" y1="359.86" x2="126.29" y2="359.86"/>
+    <line class="cls-15-2-6" x1="128.83" y1="28.9" x2="128.83" y2="184.43"/>
+    <line class="cls-6-2-6" x1="128.83" y1="383.98" x2="128.83" y2="538.9"/>
+    <line class="cls-6-2-6" x1="128.83" y1="34.14" x2="175.61" y2="34.14"/>
+    <line class="cls-6-2-6" x1="170.53" y1="55.78" x2="170.53" y2="109.79"/>
+    <line class="cls-9-2-6" x1="128.17" y1="101.99" x2="175.61" y2="101.99"/>
+    <line class="cls-11-2-6" x1="128.83" y1="239.01" x2="128.83" y2="323.75"/>
+    <line class="cls-3-2-6" x1="13.32" y1="245.93" x2="13.14" y2="324.55"/>
+    <polygon class="cls-8-2-6" points="39.31 323.75 19.69 323.75 19.69 281.38 39.31 289.16 39.31 323.75"/>
+    <line class="cls-1-2-6" x1="39.31" y1="239.01" x2="39.31" y2="332.15"/>
+    <line class="cls-1-2-6" x1="93.08" y1="239.01" x2="38.71" y2="239.01"/>
+    <line class="cls-1-2-6" x1="102.59" y1="239.01" x2="107.56" y2="239.01"/>
+    <line class="cls-1-2-6" x1="106.98" y1="331.52" x2="106.98" y2="239.01"/>
+    <line class="cls-1-2-6" x1="39.31" y1="331.52" x2="93.08" y2="331.52"/>
+    <line class="cls-1-2-6" x1="102.54" y1="331.52" x2="107.6" y2="331.52"/>
+    <line class="cls-1-2-6" x1="39.31" y1="292.62" x2="106.98" y2="292.62"/>
+    <line class="cls-5-2-6" x1="212.23" y1="204.91" x2="332.56" y2="204.91"/>
+    <line class="cls-5-2-6" x1="212.23" y1="366.78" x2="332.56" y2="366.78"/>
+    <line class="cls-12-2-6" x1="133.08" y1="137.64" x2="147.78" y2="137.64"/>
+    <line class="cls-12-2-6" x1="159.76" y1="137.55" x2="174.52" y2="137.43"/>
+    <line class="cls-11-2-6" x1="173.34" y1="184.43" x2="173.34" y2="136.13"/>
+    <line class="cls-14-2-6" x1="128.83" y1="178.52" x2="176.85" y2="178.52"/>
+    <line class="cls-5-2-6" x1="126.29" y1="5.47" x2="126.29" y2="12.23"/>
+    <line class="cls-5-2-6" x1="126.29" y1="558.41" x2="126.29" y2="565.97"/>
+    <line class="cls-1-2-6" x1="154.65" y1="225.96" x2="154.65" y2="345.81"/>
+    <line class="cls-1-2-6" x1="168.94" y1="225.79" x2="168.94" y2="345.64"/>
+    <line class="cls-1-2-6" x1="172.73" y1="225.96" x2="172.73" y2="345.81"/>
+    <line class="cls-1-2-6" x1="186.72" y1="225.34" x2="186.72" y2="345.19"/>
+    <line class="cls-1-2-6" x1="154.65" y1="233.72" x2="168.94" y2="233.72"/>
+    <line class="cls-1-2-6" x1="174.07" y1="233.72" x2="186.72" y2="233.72"/>
+    <line class="cls-1-2-6" x1="154.64" y1="338.23" x2="168.94" y2="338.23"/>
+    <line class="cls-1-2-6" x1="173.57" y1="337.69" x2="186.72" y2="338.05"/>
+    <rect class="cls-4-2-6" x="133.08" y="385.95" width="38.12" height="31.18"/>
+    <rect class="cls-2-2-6" x="132.17" y="416.7" width="29.64" height="9.71"/>
+    <line class="cls-5-2-6" x1="163.1" y1="439.09" x2="163.1" y2="427.68"/>
+    <line class="cls-5-2-6" x1="162.96" y1="459.91" x2="162.96" y2="450.35"/>
+    <line class="cls-11-2-6" x1="174.95" y1="535.53" x2="133.08" y2="535.53"/>
+    <line class="cls-15-2-6" x1="131.29" y1="463.93" x2="174.03" y2="463.93"/>
+    <line class="cls-6-2-6" x1="168.94" y1="459.91" x2="168.94" y2="511.04"/>
+    <line class="cls-5-2-6" x1="6.32" y1="4.3" x2="6.32" y2="215.89"/>
+    <line class="cls-5-2-6" x1="6.32" y1="351.88" x2="6.32" y2="565.97"/>
+    <line class="cls-5-2-6" x1="6.32" y1="245.93" x2="6.32" y2="324.59"/>
+    <line class="cls-10-2-6" x1="5.02" y1="323.48" x2="39.31" y2="323.48"/>
+    <line class="cls-5-2-6" x1="212.23" y1="220.52" x2="212.23" y2="350.72"/>
+  </g>
+</svg>
