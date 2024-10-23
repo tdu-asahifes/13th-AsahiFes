@@ -1,3 +1,11 @@
 .map-container {
     position: relative;
 }
+
+.toggle-button {
+    position: fixed; /* 位置を固定 */
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.7; /* 半透明 */
+    z-index: 2; /* 他の要素よりも上に表示 */
+}
