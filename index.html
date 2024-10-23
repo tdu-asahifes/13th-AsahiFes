@@ -159,37 +159,48 @@
         </div>
       </div>
     </div>
-
+  </section>
+  <section id="events" class="text-center mb-5 pb-5">
     <div class="container mt-5 font-banana pt-5">
       <div class="mt-24 mb-10"></div>
     <div class="title-frame mx-auto px-2">
       <div class="title">企画</div>
     </div>
     </div>
-    <div class="kikakuslide">
-      <div class="kikaku">
-        <img src="./images/kikaku/yatai.png" class="imgrad" alt="Image 1" data-toggle="modal" data-target="#exampleModal"
-          data-modal-image="images/kikaku/yataisyousai.png">
-        <img src="images/kikaku/furugi.png" class="imgrad" alt="Image 2" data-toggle="modal" data-target="#exampleModal"
-          data-modal-image="../images/kikaku/furugisyousai.png">
-        <img src="images/kikaku/fureai.png" class="imgrad" alt="Image 3" data-toggle="modal" data-target="#exampleModal"
-          data-modal-image="images/kikaku/fureaisyousai.png">
-        <img src="images/comingsoon.jpg" class="imgrad" alt="Image 3" data-toggle="modal" data-target="#exampleModal"
-          data-modal-image="images/comingsoon.jpg">
-        <img src="images/comingsoon.jpg" class="imgrad" alt="Image 3" data-toggle="modal" data-target="#exampleModal"
-          data-modal-image="images/comingsoon.jpg">
-      </div>
-    </div>
-    <!-- モーダル -->
-    <div class="modal fade  " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-lg " role="document">
-        <div class="modal-content modalbg">
-          <div class="modal-body text-center">
-            <img id="modalImage" src="" class="img-fluid" alt="モーダル画像">
-            <button type="button" class="btn btn-secondary mt-3 " data-dismiss="modal">閉じる</button>
+      <div class="carousel">
+          <div id="random" class="box" onclick="modalOpen('furugi')"><img class="kikaku-img"
+                  src="images/kikaku/furugi.png" width="100%" height="100%">
           </div>
-       
+          <div id="yatai" class="box" onclick="modalOpen('yatai')"><img class="kikaku-img"
+                  src="images/kikaku/yatai.png" width="100%" height="100%">
+          </div>
+          <div id="fureai" class="box" onclick="modalOpen('fureai')"><img class="kikaku-img"
+                  src="images/kikaku/fureai.png" width="100%" height="100%">
+          </div>
+          <div id="stamp" class="box" onclick="modalOpen('1nen')"><img class="kikaku-img"
+                  src="images/kikaku/1nen.png" width="100%" height="100%">
+          </div>
+          <div id="kodomo" class="box" onclick="modalOpen('kodomo')"><img class="kikaku-img"
+                  src="material/kikaku/kodomo.png" width="100%" height="100%">
+          </div>
+          <div id="stamp"  class="box" onclick="modalOpen('stamp')"> <img class="kikaku-img" 
+                src="images/kikaku/stamp.png" width="100%" height="100%">
+          </div>
+      </div>
+
+
+
+      <!-- モーダルウインドウのエリア  modalOpen(ここにそれぞれのモーダルのIDを入力)すると別々のコンテンツを表示させることが出来ます-->
+      <div id="modalArea1" class="modalNoDisp">
+          <!--<div class="modalWindow">ここがウインドウとなります -->
+          <div class="modalpicture" id="target"><img src="material/kikaku/randomdetail.png"></div>
+          <p><input type="button" value="閉じる" onclick="modalClose('modalArea1')"></p>
+          <!--</div>-->
+
+      </div>
+
+  </div>
+
   </section>
   
   <section id="companey">
@@ -390,7 +401,7 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <script src="js/script.js" defer></script>
 </body>
 
