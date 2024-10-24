@@ -512,24 +512,25 @@
 .modalpicture{
   margin: 10vh auto auto auto;
 }
-.modalimg{width: 60%;}
+.modalimg{width: 40%; height: 80%;}
 
 @media screen and (max-width: 530px) {
 .modalimg{
-  width: 90%;
+  width: 70%;
+  
   }
 }
 @media screen and (min-width: 530px){
-  .modalimg{width: 80%;}
+  .modalimg{width: 60%;}
 }
 @media screen and (min-width:670px){
   .modalimg{
-    width:60%;
+    width:40%;
   }
 }
 @media screen and (min-width: 1024px){
-  .modalimg{width: 40%;}
-  @media screen and (max-height: 600px){
+  .modalimg{width: 30%;}
+  @media screen and (max-height: 500px){
     .modalimg{width: 30%;}
   }
 }

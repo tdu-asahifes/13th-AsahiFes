@@ -53,8 +53,8 @@ function changeText(kikakuId) {
 
     // テキストを新しい内容に書き換える
 
-    if (kikakuId == "random") {
-        targetElement.innerHTML = "<img class=\"modalimg\" src=\"imeges/kikaku/furugisyousai.png\">";
+    if (kikakuId == "furugi") {
+        targetElement.innerHTML = "<img class=\"modalimg\" src=\"images/kikaku/furugisyousai.png\">";
         console.log(kikakuId);
     }
     else if (kikakuId == "fureai") {
