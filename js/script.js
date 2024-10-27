@@ -67,7 +67,7 @@ function changeText(kikakuId) {
         console.log(kikakuId);
     }
     else if (kikakuId == "kodomo") {
-        targetElement.innerHTML = "<img class=\"modalimg\" src=\"material/kikaku/kodomodetail.png\">";
+        targetElement.innerHTML = "<img class=\"modalimg\" src=\"images/kikaku/kodomosyousai.png\">";
         console.log(kikakuId);
     }
     else if (kikakuId == "yatai") {
