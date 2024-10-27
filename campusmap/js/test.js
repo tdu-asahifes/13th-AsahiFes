@@ -1,27 +1,37 @@
-// 最初に表示するdivの番号
-let initialDiv = 15;
+const apiURL = 'https://script.google.com/macros/s/AKfycby6J9KJT7BUHUu57kryocsV9OuWv0l3ZXlnIANDv5lFRgk7o0MPl7HHm2wd9TPUGgDyuA/exec';
+let cachedData = null;  // データのキャッシュ
+let initialDiv = 15;  // 最初に表示するdivの番号
+let isFirstLoad = true;  // 初回ロード用フラグ
 
-// ページ読み込み時に最初のdivを表示
-window.onload = function () {
+window.onload = async function () {
+    await fetchData();
     toggleDiv(initialDiv);
+
     const targetDiv = document.getElementById(`div${initialDiv}`);
     if (targetDiv) {
         targetDiv.classList.remove('hidden');
         generateList(targetDiv);
     }
+
+    let ul = document.querySelector('.hscroll ul');
+    updateViewarea(ul);
+    isFirstLoad = false;  // 初回ロード終了
 };
+
+// データを取得してキャッシュに保存
+async function fetchData() {
+    const response = await fetch(apiURL);
+    cachedData = await response.json();
+}
 
 // 押されたフロアのマップを表示する
 function toggleDiv(divNumber) {
-    // 全てのdivを非表示にする
     for (let i = 1; i <= 15; i++) {
         const div = document.getElementById(`div${i}`);
         if (div) {
             div.classList.add('hidden');
         }
     }
-
-    // クリックされたボタンに対応するdivを表示する
     const targetDiv = document.getElementById(`div${divNumber}`);
     if (targetDiv) {
         targetDiv.classList.remove('hidden');
@@ -29,52 +39,19 @@ function toggleDiv(divNumber) {
     }
 }
 
-// クリックされたボタンの色を変える（今何階かを表示する）
-function changeColor(button) {
-    const buttons = document.querySelectorAll('.button');
-
-    buttons.forEach(btn => {
-        if (btn === button) {
-            btn.classList.toggle('click');
-        } else {
-            btn.classList.remove('click');
-        }
-    });
-}
-
-
-
-function description(clickedElement) {
-    const gTag = clickedElement.querySelector('g');
-
-    if (gTag) {
-        const dataName = gTag.getAttribute('data-name');
-        console.log('クリックされた<a>要素内の<g>タグのdata-name属性は:', dataName);
-
-        loadData(dataName);
-    } else {
-        console.log('クリックされた<a>要素内に<g>タグが見つかりませんでした。');
-    }
-}
-
-// 表示されているdiv内のgタグからデータを取得してリストを生成
 async function generateList(targetDiv) {
-    const response = await fetch(apiURL);
-    const data = await response.json();
-
-    // 既存のリストをクリア
+    if (!cachedData) await fetchData();
     dynamicList.innerHTML = '';
 
     targetDiv.querySelectorAll('g[data-name]').forEach(gTag => {
         const dataName = gTag.getAttribute('data-name');
-        const matchingEntry = data.find(entry => entry.roomnumber === dataName);
+        const matchingEntry = cachedData.find(entry => entry.roomnumber === dataName);
 
         if (matchingEntry) {
             const li = document.createElement('li');
             li.className = 'text-center';
             li.setAttribute('data-roomnumber', matchingEntry.roomnumber);
-        
-            // クリックイベントを追加してモーダルを開く
+
             li.innerHTML = `
                 <div class="border border-5 rounded shadow m-3 scroll-bgcolor">
                     <a href="javascript:void(0)" class="organization-link">
@@ -82,32 +59,22 @@ async function generateList(targetDiv) {
                     </a>
                 </div>
             `;
-        
-            // モーダル表示のためのクリックイベントリスナーを追加
+
             li.querySelector('.organization-link').addEventListener('click', () => {
-                // 部屋番号に基づいてデータを読み込み、モーダルを開く
                 loadData(matchingEntry.roomnumber);
             });
-        
+
             dynamicList.appendChild(li);
         }
-        
     });
+
+    if (isFirstLoad) {
+        setTimeout(() => {
+            let ul = document.querySelector('.hscroll ul');
+            updateViewarea(ul);
+        }, 0);
+    }
 }
-
-document.querySelectorAll('.left').forEach(elm => {
-    elm.onclick = function () {
-        let ul = elm.parentNode.querySelector('ul');
-        ul.scrollLeft -= ul.clientWidth;
-    };
-});
-
-document.querySelectorAll('.right').forEach(elm => {
-    elm.onclick = function () {
-        let ul = elm.parentNode.querySelector('ul');
-        ul.scrollLeft += ul.clientWidth;
-    };
-});
 
 function updateViewarea(ul) {
     const liElements = ul.querySelectorAll('li');
@@ -129,25 +96,33 @@ function updateViewarea(ul) {
     });
 }
 
-// スクロールイベントのリスナーを追加
+// 左右スクロール
+document.querySelectorAll('.left').forEach(elm => {
+    elm.onclick = function () {
+        let ul = elm.parentNode.querySelector('ul');
+        ul.scrollLeft -= ul.clientWidth;
+    };
+});
+
+document.querySelectorAll('.right').forEach(elm => {
+    elm.onclick = function () {
+        let ul = elm.parentNode.querySelector('ul');
+        ul.scrollLeft += ul.clientWidth;
+    };
+});
+
+// スクロールイベントリスナー追加
 document.querySelector('.hscroll ul').addEventListener('scroll', function () {
-    updateViewarea(this);
-});
-document.addEventListener('DOMContentLoaded', function () {
-    let ul = document.querySelector('.hscroll ul');
-    updateViewarea(ul);
-    generateList();
+    if (!isFirstLoad) {
+        updateViewarea(this);
+    }
 });
 
-
-const apiURL = 'https://script.google.com/macros/s/AKfycbxsufyue4dbZ5tFraAVulvCgS1v2wOjUzDI961dSCyWkskS9F6Zv133m3r0D5AdYiPKGw/exec';
 const dynamicList = document.getElementById('dynamicList');
 
+// モーダル表示用のデータ読み込み
 async function loadData(roomnumberInput) {
-    const response = await fetch(apiURL);
-    const data = await response.json();
-
-    const matchingEntry = data.find(entry => entry.roomnumber === roomnumberInput);
+    const matchingEntry = cachedData.find(entry => entry.roomnumber === roomnumberInput);
 
     if (matchingEntry) {
         const baseHtml = document.querySelector('.spreadsheets--item.js-base');
@@ -160,7 +135,6 @@ async function loadData(roomnumberInput) {
 
         const copy = baseHtml.cloneNode(true);
         copy.classList.remove('js-base');
-        // copy.querySelector('.spreadsheets--building').textContent = matchingEntry.building;
         copy.querySelector('.spreadsheets--roomnumber').textContent = matchingEntry.roomnumber;
         copy.querySelector('.spreadsheets--organizationname').textContent = matchingEntry.organizationname;
         copy.querySelector('.spreadsheets--exprain').innerHTML = matchingEntry.exprain;
@@ -168,10 +142,28 @@ async function loadData(roomnumberInput) {
         copy.querySelector('.spreadsheets--date').textContent = matchingEntry.date;
         spreadsheets.appendChild(copy);
 
-        // モーダルを開く
         const modal = new bootstrap.Modal(document.getElementById('dataModal'));
         modal.show();
     } else {
         alert('該当する部屋番号が見つかりませんでした。');
     }
 }
+
+// マップ内の要素をタッチしてモーダルを表示
+function description(clickedElement) {
+    const gTag = clickedElement.querySelector('g');
+
+    if (gTag) {
+        const dataName = gTag.getAttribute('data-name');
+        loadData(dataName);
+    } else {
+        console.log('クリックされた要素にgタグが見つかりませんでした。');
+    }
+}
+
+// マップ要素にクリックイベントを追加
+document.querySelectorAll('g[data-name]').forEach(gTag => {
+    gTag.addEventListener('click', function () {
+        description(this);
+    });
+});
