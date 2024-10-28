@@ -1,3 +1,8 @@
+.navbar {
+  background-color: #f55050;
+  /* ヘッダーの背景色 */
+}
+
 .navbar-brand,
 .nav-link,
 .navbar-toggler-icon {
@@ -28,6 +33,7 @@
   border-bottom: 3px solid transparent;
 }
 
+
 .navbar-brand img:hover,
 .nav-item:hover {
   border-bottom-color: whitesmoke;
@@ -44,9 +50,6 @@
   box-shadow: 0 14px 20px -4px rgba(0, 0, 0, .25);
   transform: scale(1.1);
   background-color: #bb6666;
-
-  border-radius: 4px;
-  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
@@ -80,79 +83,12 @@
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* ボタンの色をホバー時に変更 */
-.btn-rect {
-  transition: fill 0.3s;
-  /* スムーズな変化 */
-}
-
-/* ホバー時の色変更 */
-#button-link-1:hover .btn-rect,
-#button-link-2:hover .btn-rect,
-#button-link-3:hover .btn-rect,
-#button-link-4:hover .btn-rect,
-#button-link-5:hover .btn-rect {
-  fill: #f55050;
-}
-
-/* テキストのホバー時の色変更 */
-#button-link-1:hover .btn-text,
-#button-link-2:hover .btn-text,
-#button-link-3:hover .btn-text,
-#button-link-4:hover .btn-text,
-#button-link-5:hover .btn-text {
-  fill: black;
-}
-
-/* モーダルの背景色とテキストの色をカスタマイズ */
-.modal-content {
-  background-color: #f0f8ff;
-  /* モーダル全体の背景色 */
-  color: #333;
-  /* テキストの色 */
-}
-
-
-
-/* モーダルヘッダーのカスタマイズ */
-.modal-header {
-  background-color: #771d24;
-  /* ヘッダーの背景色 */
-  color: white;
-  /* ヘッダーのテキスト色 */
-}
-
-/* モーダルボディのカスタマイズ */
-.modal-body {
-  background-color: #343a40;
-  /* ボディの背景色 */
-  color: #333;
-  /* ボディのテキスト色 */
-}
-
-/* モーダルフッターのカスタマイズ */
-.modal-footer {
-  background-color: #771d24;
-  /* フッターの背景色 */
-}
-
-
-/* ポップアップ内のボタン */
-#popup button {
-  margin: 10px;
-}
-
-/* クリック用のボタン（A, Bなど）のスタイル */
-a[id^="button-link"] {
-  display: inline-block;
-  margin: 10px;
-  cursor: pointer;
-}
-
-@media (max-width: 576px) {
-  .map-container iframe {
-    pointer-events: none; /* モバイルでのタッチ操作を無効化 */
-  }
+/* アクセスmap用画像切り替え */
+.svg-section .svg-container {
+  width: 100%;
+  /* 親コンテナはレスポンシブ */
+  text-align: center;
+  /* SVGを中央に配置 */
 }
 
 .svg-section .responsive-svg {
@@ -170,23 +106,6 @@ a[id^="button-link"] {
   /* 中央からスケーリング */
 }
 
-.modal-button {
-  cursor: pointer;
-  /* ポインタカーソルにする */
-  fill: none;
-  /* 背景を透明にする */
-  stroke: #000;
-  /* 外枠の色 */
-  stroke-width: 2;
-  /* 外枠の幅 */
-  transition: fill 0.3s ease;
-  /* 色の遷移 */
-}
-
-.modal-button:hover {
-  fill: rgba(0, 0, 255, 0.2);
-  /* ホバー時の背景色 */
-}
 
 
 /* 過去サイトがまとめられているnotionに飛ぶためのボタンです */
@@ -276,24 +195,6 @@ a[id^="button-link"] {
   /* SVGを1.5倍にスケールアップ */
   transform-origin: center;
   /* 中央からスケーリング */
-}
-
-.modal-button {
-  cursor: pointer;
-  /* ポインタカーソルにする */
-  fill: none;
-  /* 背景を透明にする */
-  stroke: #000;
-  /* 外枠の色 */
-  stroke-width: 2;
-  /* 外枠の幅 */
-  transition: fill 0.3s ease;
-  /* 色の遷移 */
-}
-
-.modal-button:hover {
-  fill: rgba(0, 0, 255, 0.2);
-  /* ホバー時の背景色 */
 }
 
 
@@ -402,6 +303,7 @@ a[id^="button-link"] {
 .kuruton {
   list-style: none;
   text-align: justify;
+  text-align: justify;
 }
 
 #countdown {
@@ -410,18 +312,23 @@ a[id^="button-link"] {
   display: inline;
 }
 
+
 .prefix {
   font-size: 1.5rem;
   vertical-align: middle;
 }
+
 
 .days {
   font-size: 3rem;
   font-weight: bold;
   color: #dc3545;
   /* Bootstrapの危険（赤色）の色を使用 */
+  color: #dc3545;
+  /* Bootstrapの危険（赤色）の色を使用 */
   vertical-align: middle;
 }
+
 
 .suffix {
   font-size: 1.5rem;
@@ -439,6 +346,10 @@ a[id^="button-link"] {
   font-size: 50px;
   font-family: "BananaFont";
   color: #f55050;
+}
+.kikakuslide {
+  display: flex;
+  overflow-x: scroll;
 }
 
 .sponsor-images {
