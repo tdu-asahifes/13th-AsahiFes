@@ -144,9 +144,10 @@ async function loadData(roomnumberInput) {
 
         const modal = new bootstrap.Modal(document.getElementById('dataModal'));
         modal.show();
-    } else {
-        alert('該当する部屋番号が見つかりませんでした。');
-    }
+    } 
+    // else {
+    //     alert('該当する部屋番号が見つかりませんでした。');
+    // }
 }
 
 // マップ内の要素をタッチしてモーダルを表示
@@ -156,9 +157,10 @@ function description(clickedElement) {
     if (gTag) {
         const dataName = gTag.getAttribute('data-name');
         loadData(dataName);
-    } else {
-        console.log('クリックされた要素にgタグが見つかりませんでした。');
-    }
+     } 
+    //  else {
+    //     console.log('クリックされた要素にgタグが見つかりませんでした。');
+    // }
 }
 
 // マップ要素にクリックイベントを追加
