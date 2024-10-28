@@ -1,6 +1,6 @@
 const apiURL = 'https://script.google.com/macros/s/AKfycby6J9KJT7BUHUu57kryocsV9OuWv0l3ZXlnIANDv5lFRgk7o0MPl7HHm2wd9TPUGgDyuA/exec';
 let cachedData = null;  // データのキャッシュ
-let initialDiv = 15;  // 最初に表示するdivの番号
+let initialDiv = 1;  // 最初に表示するdivの番号
 let isFirstLoad = true;  // 初回ロード用フラグ
 
 window.onload = async function () {
