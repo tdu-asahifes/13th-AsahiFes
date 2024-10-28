@@ -462,6 +462,176 @@ a[id^="button-link"] {
   transform: scale(1.05);
 }
 
+.kikaku {
+  text-align: center;
+  position: center;
+  margin-top: 8rem;
+}
+
+/*カルーセルのcss*/
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 1rem;
+  z-index: 2;
+}
+
+.carouselcenter{
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 187px;
+  margin-right: 1rem;
+  background-color: none;
+  border-radius: 20px;
+  display: flex;
+  font-size: 24px;
+}
+
+.kikaku-img {
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+.kikaku-img:hover{
+  transform: scale(1.05);
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  /*top: 50%;*/
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+/* === モーダル非表示（初期） ============================== */
+.modalNoDisp {
+  display: none;
+}
+
+/* === モーダルバックグランド ============================== */
+.modalBg {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle at 50% 50%,
+      rgba(0, 0, 0, 0.90),
+      rgba(0, 0, 0, 0.70));
+  z-index: 10;
+}
+
+/* === モーダルバックグランド：OPEN時のアニメーション ====== */
+.modalBgOpen {
+  animation: bgOpenAnime 0.3s ease;
+}
+
+@keyframes bgOpenAnime {
+
+  /* フェードイン */
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* === モーダルバックグランド：CLOSE時のアニメーション ===== */
+.modalBgClose {
+  bottom: 100%;
+  animation: bgCloseAnime 0.3s ease;
+}
+
+@keyframes bgCloseAnime {
+
+  /* フェードイン */
+  0% {
+    opacity: 1;
+    bottom: 0
+  }
+
+  100% {
+    opacity: 0;
+    bottom: 0
+  }
+}
+
+/* === モーダルウインド ==================================== */
+.modalBg .modalWindow {
+  /* モーダルウインドを中心に表示 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  /* ↓モーダルウインドウの見た目：変更してください */
+  width: 600px;
+  min-height: 500px;
+  background: #fff;
+  border: 3px solid #35557f;
+  border-radius: 10px;
+  font-size: 16pt;
+  text-align: center;
+}
+
+.modalpicture{
+  margin: 10vh auto auto auto;
+}
+.modalimg{width: 40%; height: 80%;}
+
+@media screen and (max-width: 530px) {
+.modalimg{
+  width: 70%;
+  
+  }
+}
+@media screen and (min-width: 530px){
+  .modalimg{width: 60%;}
+}
+@media screen and (min-width:670px){
+  .modalimg{
+    width:40%;
+  }
+}
+@media screen and (min-width: 1024px){
+  .modalimg{width: 30%;}
+  @media screen and (max-height: 500px){
+    .modalimg{width: 30%;}
+  }
+}
+
+@media screen and (min-width:1300px){
+  .modalimg{
+    width:30%;
+  }
+}
+
 .title-frame {
   border: 3px solid #f55050;
   border-radius: 10px;
