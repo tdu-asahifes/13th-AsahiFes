@@ -91,6 +91,81 @@
   /* SVGを中央に配置 */
 }
 
+/* ボタンの色をホバー時に変更 */
+.btn-rect {
+  transition: fill 0.3s;
+  /* スムーズな変化 */
+}
+
+/* ホバー時の色変更 */
+#button-link-1:hover .btn-rect,
+#button-link-2:hover .btn-rect,
+#button-link-3:hover .btn-rect,
+#button-link-4:hover .btn-rect,
+#button-link-5:hover .btn-rect {
+  fill: #f55050;
+}
+
+/* テキストのホバー時の色変更 */
+#button-link-1:hover .btn-text,
+#button-link-2:hover .btn-text,
+#button-link-3:hover .btn-text,
+#button-link-4:hover .btn-text,
+#button-link-5:hover .btn-text {
+  fill: black;
+}
+
+/* モーダルの背景色とテキストの色をカスタマイズ */
+.modal-content {
+  background-color: #f0f8ff;
+  /* モーダル全体の背景色 */
+  color: #333;
+  /* テキストの色 */
+}
+
+
+
+/* モーダルヘッダーのカスタマイズ */
+.modal-header {
+  background-color: #771d24;
+  /* ヘッダーの背景色 */
+  color: white;
+  /* ヘッダーのテキスト色 */
+}
+
+/* モーダルボディのカスタマイズ */
+.modal-body {
+  background-color: #343a40;
+  /* ボディの背景色 */
+  color: #333;
+  /* ボディのテキスト色 */
+}
+
+/* モーダルフッターのカスタマイズ */
+.modal-footer {
+  background-color: #771d24;
+  /* フッターの背景色 */
+}
+
+
+/* ポップアップ内のボタン */
+#popup button {
+  margin: 10px;
+}
+
+/* クリック用のボタン（A, Bなど）のスタイル */
+a[id^="button-link"] {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .map-container iframe {
+    pointer-events: none; /* モバイルでのタッチ操作を無効化 */
+  }
+}
+
 .svg-section .responsive-svg {
   width: 100%;
   /* SVGの幅を親コンテナ全体に設定 */
@@ -106,6 +181,23 @@
   /* 中央からスケーリング */
 }
 
+.modal-button {
+  cursor: pointer;
+  /* ポインタカーソルにする */
+  fill: none;
+  /* 背景を透明にする */
+  stroke: #000;
+  /* 外枠の色 */
+  stroke-width: 2;
+  /* 外枠の幅 */
+  transition: fill 0.3s ease;
+  /* 色の遷移 */
+}
+
+.modal-button:hover {
+  fill: rgba(0, 0, 255, 0.2);
+  /* ホバー時の背景色 */
+}
 
 
 /* 過去サイトがまとめられているnotionに飛ぶためのボタンです */
@@ -195,6 +287,24 @@
   /* SVGを1.5倍にスケールアップ */
   transform-origin: center;
   /* 中央からスケーリング */
+}
+
+.modal-button {
+  cursor: pointer;
+  /* ポインタカーソルにする */
+  fill: none;
+  /* 背景を透明にする */
+  stroke: #000;
+  /* 外枠の色 */
+  stroke-width: 2;
+  /* 外枠の幅 */
+  transition: fill 0.3s ease;
+  /* 色の遷移 */
+}
+
+.modal-button:hover {
+  fill: rgba(0, 0, 255, 0.2);
+  /* ホバー時の背景色 */
 }
 
 
