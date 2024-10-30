@@ -29,7 +29,6 @@
   box-shadow: 0 14px 20px -4px rgba(0, 0, 0, .25);
   transform: scale(1.1);
   background-color: #bb6666;
-
   border-radius: 4px;
   transition: all 0.3s ease;
 }
@@ -53,7 +52,6 @@
 .nav-logo {
   width: 20vw;
 }
-
 
 /*  style="width:300px;" */
 .navbar-toggler-icon {
@@ -91,8 +89,6 @@
   color: #333;
   /* テキストの色 */
 }
-
-
 
 /* モーダルヘッダーのカスタマイズ */
 .modal-header {
@@ -179,7 +175,6 @@ a[id^="button-link"] {
 
 
 /* 過去サイトがまとめられているnotionに飛ぶためのボタンです */
-
 .site-button {
   /* margin-top: 3rem; */
   display: inline-block;
@@ -253,7 +248,6 @@ a[id^="button-link"] {
   max-height: 100px;
 }
 
-
 .balloon2-left::before {
   content: "";
   position: absolute;
@@ -292,7 +286,6 @@ a[id^="button-link"] {
   vertical-align: middle;
 }
 
-
 .days,
 .hours,
 .minutes,
@@ -324,12 +317,10 @@ a[id^="button-link"] {
   white-space: nowrap;  /* 改行を防ぐ */
 }
 
-
 .suffix {
   font-size: 1.5rem;
   vertical-align: middle;
 }
-
 
 .kikakuslide {
   display: flex;
