@@ -22,21 +22,30 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 });
-function countdown() {
-  const targetDate = new Date("November 2, 2024 00:00:00").getTime();
+const targetDate = new Date("November 2, 2024 10:00:00").getTime();
+
+function updateCountdown() {
   const now = new Date().getTime();
   const timeRemaining = targetDate - now;
 
   const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-  document.querySelector(".days").innerText = days;
+  document.querySelector("#countdown .days").textContent = days;
+  document.querySelector("#countdown .hours").textContent = hours;
+  document.querySelector("#countdown .minutes").textContent = minutes;
+  document.querySelector("#countdown .seconds").textContent = seconds;
 
   if (timeRemaining < 0) {
-    document.getElementById("countdown").innerHTML = "カウントダウン終了";
+    document.getElementById("countdown").innerHTML = "旭祭が開催されました！";
   }
 }
 
-setInterval(countdown, 1000);
+// 1秒ごとにカウントダウンを更新
+setInterval(updateCountdown, 1000);
+
 
 document.querySelectorAll(".navbar-nav .nav-link").forEach(function (navLink) {
   navLink.addEventListener("click", function () {

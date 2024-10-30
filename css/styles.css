@@ -162,7 +162,8 @@ a[id^="button-link"] {
 
 @media (max-width: 576px) {
   .map-container iframe {
-    pointer-events: none; /* モバイルでのタッチ操作を無効化 */
+    pointer-events: none;
+    /* モバイルでのタッチ操作を無効化 */
   }
 }
 
@@ -429,15 +430,35 @@ a[id^="button-link"] {
 }
 
 
-.days {
-  font-size: 3rem;
+.days,
+.hours,
+.minutes,
+.seconds {
   font-weight: bold;
   color: #dc3545;
   /* Bootstrapの危険（赤色）の色を使用 */
   color: #dc3545;
   /* Bootstrapの危険（赤色）の色を使用 */
   vertical-align: middle;
+  display: inline-block;
+  width: 1.4em;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.2em;
 }
+
+.hoursbr {
+  display: none !important;
+}
+
+@media (max-width: 575px) {
+  .hoursbr {
+    display: block;
+    /* 画面幅が575px未満の場合に改行 */
+  }
+}
+
+
 
 
 .suffix {
@@ -457,6 +478,7 @@ a[id^="button-link"] {
   font-family: "BananaFont";
   color: #f55050;
 }
+
 .kikakuslide {
   display: flex;
   overflow-x: scroll;
@@ -499,7 +521,7 @@ a[id^="button-link"] {
   z-index: 2;
 }
 
-.carouselcenter{
+.carouselcenter {
   display: flex;
   justify-content: center;
 }
@@ -519,7 +541,8 @@ a[id^="button-link"] {
   border-radius: 20px;
   transition: transform 0.2s ease-in-out;
 }
-.kikaku-img:hover{
+
+.kikaku-img:hover {
   transform: scale(1.05);
 }
 
@@ -621,35 +644,49 @@ a[id^="button-link"] {
   text-align: center;
 }
 
-.modalpicture{
+.modalpicture {
   margin: 10vh auto auto auto;
 }
-.modalimg{width: 40%; height: 80%;}
+
+.modalimg {
+  width: 40%;
+  height: 80%;
+}
 
 @media screen and (max-width: 530px) {
-.modalimg{
-  width: 70%;
-  
-  }
-}
-@media screen and (min-width: 530px){
-  .modalimg{width: 60%;}
-}
-@media screen and (min-width:670px){
-  .modalimg{
-    width:40%;
-  }
-}
-@media screen and (min-width: 1024px){
-  .modalimg{width: 30%;}
-  @media screen and (max-height: 500px){
-    .modalimg{width: 30%;}
+  .modalimg {
+    width: 70%;
+
   }
 }
 
-@media screen and (min-width:1300px){
-  .modalimg{
-    width:30%;
+@media screen and (min-width: 530px) {
+  .modalimg {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width:670px) {
+  .modalimg {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modalimg {
+    width: 30%;
+  }
+
+  @media screen and (max-height: 500px) {
+    .modalimg {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (min-width:1300px) {
+  .modalimg {
+    width: 30%;
   }
 }
 
@@ -755,6 +792,3 @@ a[id^="button-link"] {
   font-weight: 700;
   font-style: normal;
 }
-
-
-
