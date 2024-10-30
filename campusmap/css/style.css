@@ -146,3 +146,8 @@ a:hover{
 .ht-10{
     height: 70vh;
 }
+
+
+.modal-body {
+    background-color: #ffffff !important; /* モーダルの背景色を白に設定 */
+}
