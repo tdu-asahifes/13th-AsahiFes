@@ -1,0 +1,177 @@
+/*タイムスケジュール関連です*/
+.time-slot1H {
+    position: relative;
+    height: 120px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot2H {
+    position: relative;
+    height: 240px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot2H30 {
+    position: relative;
+    height: 300px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot30 {
+    position: relative;
+    height: 60px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot15 {
+    position: relative;
+    height: 30px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot20 {
+    position: relative;
+    height: 40px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot45 {
+    position: relative;
+    height: 90px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot40 {
+    position: relative;
+    height: 80px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot35 {
+    position: relative;
+    height: 70px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot5 {
+    position: relative;
+    height: 10px;
+    display: flex;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+.time-slot10 {
+    position: relative;
+    height: 20px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot25 {
+    position: relative;
+    height: 50px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.time-slot5H {
+    position: relative;
+    height: 600px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.current-time-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-top: 2px solid red;
+    z-index: 1;
+    color: red;
+}
+
+.timetable {
+    height: 840px;
+    /* 7時間 × 120px = 840px */
+    position: relative;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.timetableSpe {
+    height: 600px;
+    /* 5時間 × 120px = 600px */
+    position: relative;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.timetableGym {
+    height: 480px;
+    /* 4 × 120px = 480px */
+    position: relative;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.task {
+    width: 90%;
+    border: 3px solid #897c7c;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: grid;
+    /* グリッドレイアウトを適用 */
+    place-items: center;
+    /* 上下左右中央寄せ */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 99%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 40vh auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    font-size: medium;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #362d2d;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*上よりタイムスケジュール関連です*/

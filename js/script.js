@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 });
-
 function countdown() {
   const targetDate = new Date("November 2, 2024 00:00:00").getTime();
   const now = new Date().getTime();
@@ -49,12 +48,58 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach(function (navLink) {
   });
 });
 
-navLink.addEventListener("click", function () {
-  var navbarCollapse = document.querySelector(".navbar-collapse");
-  var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-    toggle: false,
+function modalOpen(kikakuId) {
+  //------------------------------------------------------------
+  //  モーダルウインドウ オープン
+  //------------------------------------------------------------
+  document.getElementById("modalArea1").className = "modalBg modalBgOpen";
+  changeText(kikakuId);
+  console.log(kikakuId);
+}
+
+function modalClose() {
+  //------------------------------------------------------------
+  //  モーダルウインドウ クローズ
+  //------------------------------------------------------------
+  document.getElementById("modalArea1").className = "modalBg modalBgClose";
+}
+
+// JavaScriptファイル (script.js) 内のコード
+
+// テキストを書き換える関数
+function changeText(kikakuId) {
+  // idが"target"の要素を取得
+  var targetElement = document.getElementById("target");
+  console.log(kikakuId);
+
+  // テキストを新しい内容に書き換える
+
+  if (kikakuId == "furugi") {
+    targetElement.innerHTML =
+      '<img class="modalimg" src="images/kikaku/furugisyousai.png">';
+    console.log(kikakuId);
+  } else if (kikakuId == "fureai") {
+    targetElement.innerHTML =
+      '<img class="modalimg" src="images/kikaku/fureaisyousai.png">';
+    console.log(kikakuId);
+  } else if (kikakuId == "1nen") {
+    targetElement.innerHTML =
+      '<img class="modalimg" src="images/kikaku/1nensyousai.png">';
+
+    // モーダルを表示
+    var myModal = new bootstrap.Modal(document.getElementById("popupModal"));
+    myModal.show();
+  }
+}
+
+document.querySelectorAll(".navbar-nav .nav-link").forEach(function (navLink) {
+  navLink.addEventListener("click", function () {
+    var navbarCollapse = document.querySelector(".navbar-collapse");
+    var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+      toggle: false,
+    });
+    bsCollapse.hide(); // メニューを閉じる
   });
-  bsCollapse.hide(); // メニューを閉じる
 });
 
 function modalOpen(kikakuId) {
@@ -113,4 +158,25 @@ function changeText(kikakuId) {
       '<img class="modalimg" src="images/kikaku/yataisyousai.png">';
     console.log(kikakuId);
   }
+}
+
+// モーダル背景をクリックした時にモーダルを閉じる処理
+document.addEventListener("click", function (event) {
+  // モーダルの外側をクリックしたときのみ閉じる
+  var modal = document.getElementById("popupModal");
+  if (event.target === modal) {
+    var bootstrapModal = bootstrap.Modal.getInstance(modal); // Bootstrapのモーダルインスタンスを取得
+    bootstrapModal.hide(); // モーダルを閉じる
+  }
+});
+
+function openPopup(element) {
+  // data-popup-url属性からURLを取得
+  var url = element.getAttribute("data-popup-url");
+  // iframeに取得したURLを設定
+  document.getElementById("externalContent").src = url;
+
+  // モーダルを表示
+  var myModal = new bootstrap.Modal(document.getElementById("popupModal"));
+  myModal.show();
 }
