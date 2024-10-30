@@ -1,3 +1,8 @@
+.navbar {
+  background-color: #f55050;
+  /* ヘッダーの背景色 */
+}
+
 .navbar-brand,
 .nav-link,
 .navbar-toggler-icon {
@@ -18,23 +23,12 @@
   border-bottom: 3px solid transparent;
 }
 
-.navbar {
-  position: sticky;
-  width: 100%;
-}
-
-.nav-item {
-  border-bottom: 3px;
-  border-bottom: 3px solid transparent;
-}
-
 .navbar-brand img:hover,
 .nav-item:hover {
   border-bottom-color: whitesmoke;
   box-shadow: 0 14px 20px -4px rgba(0, 0, 0, .25);
   transform: scale(1.1);
   background-color: #bb6666;
-
   border-radius: 4px;
   transition: all 0.3s ease;
 }
@@ -44,9 +38,6 @@
   box-shadow: 0 14px 20px -4px rgba(0, 0, 0, .25);
   transform: scale(1.1);
   background-color: #bb6666;
-
-  border-radius: 4px;
-  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
@@ -62,24 +53,85 @@
   width: 20vw;
 }
 
-
-
-.theme-explanation {
-  border-color: #f55050;
-  border-radius: 10%;
-}
-
-
-.nav-logo {
-  width: 20vw;
-}
-
-
 /*  style="width:300px;" */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* ボタンの色をホバー時に変更 */
+.btn-rect {
+  transition: fill 0.3s;
+  /* スムーズな変化 */
+}
+
+/* ホバー時の色変更 */
+#button-link-1:hover .btn-rect,
+#button-link-2:hover .btn-rect,
+#button-link-3:hover .btn-rect,
+#button-link-4:hover .btn-rect,
+#button-link-5:hover .btn-rect {
+  fill: #f55050;
+}
+
+/* テキストのホバー時の色変更 */
+#button-link-1:hover .btn-text,
+#button-link-2:hover .btn-text,
+#button-link-3:hover .btn-text,
+#button-link-4:hover .btn-text,
+#button-link-5:hover .btn-text {
+  fill: black;
+}
+
+/* モーダルの背景色とテキストの色をカスタマイズ */
+.modal-content {
+  background-color: #f0f8ff;
+  /* モーダル全体の背景色 */
+  color: #333;
+  /* テキストの色 */
+}
+
+/* モーダルヘッダーのカスタマイズ */
+.modal-header {
+  background-color: #771d24;
+  /* ヘッダーの背景色 */
+  color: white;
+  /* ヘッダーのテキスト色 */
+}
+
+/* モーダルボディのカスタマイズ */
+.modal-body {
+  background-color: #343a40;
+  /* ボディの背景色 */
+  color: #333;
+  /* ボディのテキスト色 */
+}
+
+/* モーダルフッターのカスタマイズ */
+.modal-footer {
+  background-color: #771d24;
+  /* フッターの背景色 */
+}
+
+
+/* ポップアップ内のボタン */
+#popup button {
+  margin: 10px;
+}
+
+/* クリック用のボタン（A, Bなど）のスタイル */
+a[id^="button-link"] {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .map-container iframe {
+    pointer-events: none;
+    /* モバイルでのタッチ操作を無効化 */
+  }
+}
+
 /* アクセスmap用画像切り替え */
 .svg-section .svg-container {
   width: 100%;
@@ -123,7 +175,6 @@
 
 
 /* 過去サイトがまとめられているnotionに飛ぶためのボタンです */
-
 .site-button {
   /* margin-top: 3rem; */
   display: inline-block;
@@ -188,119 +239,14 @@
   color: #f55050;
 }
 
-/* アクセスmap用画像切り替え */
-.svg-section .svg-container {
-  width: 100%;
-  /* 親コンテナはレスポンシブ */
-  text-align: center;
-  /* SVGを中央に配置 */
-}
-
-.svg-section .responsive-svg {
-  width: 100%;
-  /* SVGの幅を親コンテナ全体に設定 */
-  max-width: 400px;
-  /* SVGの最大幅を400pxに設定（デフォルト） */
-  height: auto;
-  /* 自動で高さを調整してアスペクト比を維持 */
-  display: inline-block;
-  /* インラインブロックで中央配置 */
-  transform: scale(1.5);
-  /* SVGを1.5倍にスケールアップ */
-  transform-origin: center;
-  /* 中央からスケーリング */
-}
-
-.modal-button {
-  cursor: pointer;
-  /* ポインタカーソルにする */
-  fill: none;
-  /* 背景を透明にする */
-  stroke: #000;
-  /* 外枠の色 */
-  stroke-width: 2;
-  /* 外枠の幅 */
-  transition: fill 0.3s ease;
-  /* 色の遷移 */
-}
-
-.modal-button:hover {
-  fill: rgba(0, 0, 255, 0.2);
-  /* ホバー時の背景色 */
-}
-
-
-/* 過去サイトがまとめられているnotionに飛ぶためのボタンです */
-
-.site-button {
-  /* margin-top: 3rem; */
-  display: inline-block;
-  border-radius: 60px;
-  font-size: 18pt;
-  text-align: center;
-  cursor: pointer;
-  padding: 12px 12px;
-  background: #771d24;
-  color: #ffffff;
-  line-height: 1em;
-  transition: .2s;
-  box-shadow: 4px 4px 6px #f55050;
-  border: 2px solid #771d24;
-  text-decoration: none;
-}
-
-.site-button:hover {
-  background-color: #ee5b5b;
-  border: 2px solid #771d24;
-  /* ホバー時に色が濃くなる */
-  color: #1b0a0a;
-}
-
-.site-button svg {
-  margin-left: 8px;
-  /* テキストとアイコンの間隔 */
-  fill: currentColor;
-  /* アイコンの色を親要素の色に合わせる */
-  width: 1.2em;
-  /* アイコンのサイズ */
-  height: 1.2em;
-  /* アイコンのサイズ */
-}
-
-/* mt-3=1に倣って作成してます */
-.mt-24 {
-  margin-top: 8rem;
-}
-
-.mb-15 {
-  margin-bottom: 5rem;
-}
-
-/* タイトル関係　仮で作ったものなのでデザインとかは変更しちゃってください */
-
-.title-frame {
-  border: 3px solid #f55050;
-  border-radius: 10px;
-  width: fit-content;
-  margin-bottom: 5vh;
-}
-
-@font-face {
-  font-family: 'BananaFont';
-  src: url('../fonts/YDWbananaslipplus.otf') format('truetype');
-}
-
-.title {
-  font-size: 50px;
+.font-banana {
   font-family: "BananaFont";
-  color: #f55050;
 }
 
 .img-container img {
   max-width: 100px;
   max-height: 100px;
 }
-
 
 .balloon2-left::before {
   content: "";
@@ -328,28 +274,47 @@
   text-align: justify;
 }
 
-.kuruton {
-  list-style: none;
-  text-align: justify;
-}
-
 #countdown {
   font-size: 2rem;
   margin-top: 20px;
   display: inline;
 }
 
+
 .prefix {
   font-size: 1.5rem;
   vertical-align: middle;
 }
 
-.days {
-  font-size: 3rem;
+.days,
+.hours,
+.minutes,
+.seconds {
   font-weight: bold;
   color: #dc3545;
   /* Bootstrapの危険（赤色）の色を使用 */
+  color: #dc3545;
+  /* Bootstrapの危険（赤色）の色を使用 */
   vertical-align: middle;
+  display: inline-block;
+  width: 1.4em;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+.hoursbr {
+  display: none !important;
+}
+
+@media (max-width: 545px) {
+  .hoursbr{
+      display: block;  /* 指定幅以下で改行 */
+  }
+}
+
+.time-group {
+  white-space: nowrap;  /* 改行を防ぐ */
 }
 
 .suffix {
@@ -357,17 +322,9 @@
   vertical-align: middle;
 }
 
-.title-frame {
-  border: 3px solid #f55050;
-  border-radius: 10px;
-  width: fit-content;
-  margin-bottom: 5vh;
-}
-
-.title {
-  font-size: 50px;
-  font-family: "BananaFont";
-  color: #f55050;
+.kikakuslide {
+  display: flex;
+  overflow-x: scroll;
 }
 
 .sponsor-images {
@@ -375,85 +332,201 @@
   align-content: center !important;
   margin-right: auto;
   margin-left: auto;
-  /* display: flex; */
   align-items: center;
-
 }
 
 .sponsor-img {
   max-width: auto;
   height: 40px;
   transition: transform 0.2s;
-
 }
 
 .sponsor-img:hover {
   transform: scale(1.05);
 }
 
-.title-frame {
-  border: 3px solid #f55050;
-  border-radius: 10px;
-  width: fit-content;
-  margin-bottom: 5vh;
+.kikaku {
+  text-align: center;
+  position: center;
+  margin-top: 8rem;
 }
 
-.title {
-  font-size: 50px;
-  font-family: "BananaFont";
-  color: #f55050;
+/*カルーセルのcss*/
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 1rem;
+  z-index: 2;
 }
 
-.sponsor-images {
+.carouselcenter {
+  display: flex;
   justify-content: center;
-  align-content: center !important;
-  margin-right: auto;
-  margin-left: auto;
-  /* display: flex; */
-  align-items: center;
-
 }
 
-.sponsor-img {
-  max-width: auto;
-  height: 40px;
-  transition: transform 0.2s;
-
+.box {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 187px;
+  margin-right: 1rem;
+  background-color: none;
+  border-radius: 20px;
+  display: flex;
+  font-size: 24px;
 }
 
-.sponsor-img:hover {
-  transform: scale(1.05);
-}
-
-.fab:hover {
-  color: darkgrey;
-}
-
-.guest-img {
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
+.kikaku-img {
   border-radius: 20px;
   transition: transform 0.2s ease-in-out;
 }
 
-.guest-img:hover {
+.kikaku-img:hover {
   transform: scale(1.05);
 }
 
-.guest-img-tmp {
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 20px;
+.prev-button,
+.next-button {
+  position: absolute;
+  /*top: 50%;*/
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.bg-thema {
-  background-color: #771d24;
+.prev-button {
+  left: 10px;
 }
 
-.text-thema {
-  color: #771d24;
+.next-button {
+  right: 10px;
+}
+
+/* === モーダル非表示（初期） ============================== */
+.modalNoDisp {
+  display: none;
+}
+
+/* === モーダルバックグランド ============================== */
+.modalBg {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle at 50% 50%,
+      rgba(0, 0, 0, 0.90),
+      rgba(0, 0, 0, 0.70));
+  z-index: 10;
+}
+
+/* === モーダルバックグランド：OPEN時のアニメーション ====== */
+.modalBgOpen {
+  animation: bgOpenAnime 0.3s ease;
+}
+
+@keyframes bgOpenAnime {
+  /* フェードイン */
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+/* === モーダルバックグランド：CLOSE時のアニメーション ===== */
+.modalBgClose {
+  bottom: 100%;
+  animation: bgCloseAnime 0.3s ease;
+}
+
+@keyframes bgCloseAnime {
+  /* フェードイン */
+  0% {
+    opacity: 1;
+    bottom: 0
+  }
+  100% {
+    opacity: 0;
+    bottom: 0
+  }
+}
+
+/* === モーダルウインド ==================================== */
+.modalBg .modalWindow {
+  /* モーダルウインドを中心に表示 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  /* ↓モーダルウインドウの見た目：変更してください */
+  width: 600px;
+  min-height: 500px;
+  background: #fff;
+  border: 3px solid #35557f;
+  border-radius: 10px;
+  font-size: 16pt;
+  text-align: center;
+}
+
+.modalpicture {
+  margin: 10vh auto auto auto;
+}
+
+.modalimg {
+  width: 40%;
+  height: 80%;
+}
+
+@media screen and (max-width: 530px) {
+  .modalimg {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .modalimg {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width:670px) {
+  .modalimg {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modalimg {
+    width: 30%;
+  }
+
+  @media screen and (max-height: 500px) {
+    .modalimg {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (min-width:1300px) {
+  .modalimg {
+    width: 30%;
+  }
+}
+
+.fab:hover {
+  color: darkgrey;
 }
 
 .guest-img {
