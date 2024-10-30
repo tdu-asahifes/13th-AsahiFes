@@ -1,0 +1,161 @@
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kari{
+    width: 80vh;
+}
+
+article svg {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+
+.scroll-bgcolor{
+    background-color: #e0d9d9;
+}
+
+/*スクロールメニュー部分のcss*/
+.hscroll {
+    width: 100%; /* 画面幅に合わせる */
+    height: auto;
+    position: relative;
+    border: 1px solid lightgray;
+    box-sizing: border-box; /* パディングやボーダーを幅に含める */
+    overflow: hidden; /* 横スクロールバーを非表示にする */
+}
+
+.hscroll ul {
+    padding: 0;
+    margin: 0;
+    width: 100%; /* 幅を画面に合わせる */
+    height: 100%;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto; /* 必要な場合にのみスクロールを許可する */
+    box-sizing: border-box; /* パディングやボーダーを幅に含める */
+}
+
+.hscroll li {
+    list-style: none;
+    display: inline-block;
+    scroll-snap-align: center;
+    width: 100%; /* リスト項目の幅を画面幅に合わせる */
+    height: 100%;
+    box-sizing: border-box; /* パディングやボーダーを幅に含める */
+}
+
+/* スクロール矢印部分の調整 */
+.arrow {
+    top: 0;
+    position: absolute;
+    width: 8%; 
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    box-sizing: border-box; /* パディングやボーダーを幅に含める */
+}
+
+.arrow:before {
+	content:'';
+	position:absolute;
+	width:10px;
+	height:10px;
+	border-left:4px solid gray;
+	border-bottom:4px solid gray;
+}
+.left {
+	left:0px;
+}
+.left:before {
+	top:calc(50% - 10px);
+	left:calc(50% - 4px);
+	transform:rotate(45deg);
+}
+.right {
+	right:0;
+}
+.right:before {
+	top:calc(50% - 10px);
+	right:calc(50% - 6px);
+	transform:rotate(-135deg);
+}
+@media screen and (max-width:480px) {
+	.hscroll ul {
+		overflow-x:auto;
+	}
+}
+
+.select{
+    opacity: 0.5;
+}
+
+
+/*マップ部分SVG*/
+.floor-title{text-align: center;
+    background-color: #9e9a6f;
+}
+
+.btn-color{
+    background-color: #771d24;
+}
+
+.button{background-color: #1b3c65;
+    color: #f8e890;
+    margin: 0 auto 4px auto ;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 black;
+    padding: 10px;
+    width: 70%; 
+    display: block;
+    cursor: pointer;
+    cursor: #ffffff;
+}
+
+.button:hover{
+background-color: azure;
+color: #1b3c65;
+} 
+
+/*表示されている階を色変え*/
+.click {
+background-color: azure;
+}
+
+
+img{width: 80%;
+    height: auto;}
+
+
+a:hover{
+  opacity: 0.5;
+}
+
+
+/*フロアごとマップを隠すｃｓｓ*/
+.hidden {
+    display: none;
+  }
+
+
+.ht-10{
+    height: 70vh;
+}
+
+
+.modal-body {
+    background-color: #ffffff !important; /* モーダルの背景色を白に設定 */
+}
+
+g a {
+    text-decoration: none;
+}
+
+.maplink{
+    text-decoration: none;
+}
