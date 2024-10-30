@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   let currentImageIndex = 0;
   let images = [];
