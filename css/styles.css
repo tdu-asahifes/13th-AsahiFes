@@ -450,12 +450,14 @@ a[id^="button-link"] {
 .hoursbr {
   display: none !important;
 }
-
-@media (max-width: 575px) {
-  .hoursbr {
-    display: block;
-    /* 画面幅が575px未満の場合に改行 */
+@media (max-width: 545px) {
+  .hoursbr{
+      display: block;  /* 指定幅以下で改行 */
   }
+}
+
+.time-group {
+  white-space: nowrap;  /* 改行を防ぐ */
 }
 
 
