@@ -151,3 +151,11 @@ a:hover{
 .modal-body {
     background-color: #ffffff !important; /* モーダルの背景色を白に設定 */
 }
+
+g a {
+    text-decoration: none;
+}
+
+.maplink{
+    text-decoration: none;
+}
