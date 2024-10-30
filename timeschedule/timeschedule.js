@@ -101,7 +101,7 @@ function updateCurrentTimeLine() {
     優秀団体表彰式: "優秀団体の表彰式を行います。",
     管楽器部: "管楽器を演奏",
     PLOWLYNX: "PLOWLYNX",
-    DJ部: "djdj",
+    DJ部: "ダンスミュージック・EDM、音ゲー・アニソン・サブカル系などなど、多彩なジャンルのDJを取り揃えています。きっとあなたも気に入るDJがいるはず。",
   };
   
   function openModal(eventName) {
