@@ -17,26 +17,26 @@ function fetchAndUpdateData() {
     .then((response) => response.json())
     .then((data) => {
       // 展示、屋台、公演それぞれの部門を処理
-      const exhibition = data.exhibition.map((item) => {
-        return {
+      const exhibition = data.exhibition
+        .map((item) => ({
           name: item.name.replace(/\s*[（(].*?[）)]\s*/g, ""), // 全角・半角括弧内の内容を削除
           votes: item.votes,
-        };
-      });
+        }))
+        .filter((item) => item.name !== "一つも行っていない"); // 「一つも行っていない」を除外
 
-      const foodStall = data.foodStall.map((item) => {
-        return {
+      const foodStall = data.foodStall
+        .map((item) => ({
           name: item.name.replace(/\s*[（(].*?[）)]\s*/g, ""),
           votes: item.votes,
-        };
-      });
+        }))
+        .filter((item) => item.name !== "一つも行っていない");
 
-      const stage = data.stage.map((item) => {
-        return {
+      const stage = data.stage
+        .map((item) => ({
           name: item.name.replace(/\s*[（(].*?[）)]\s*/g, ""),
           votes: item.votes,
-        };
-      });
+        }))
+        .filter((item) => item.name !== "一つも行っていない");
 
       // それぞれの部門で1位から3位までをHTMLに表示
       document.getElementById("exhibition-1").textContent = exhibition[0]
