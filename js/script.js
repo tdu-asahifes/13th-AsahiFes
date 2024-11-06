@@ -25,22 +25,23 @@ document.addEventListener("DOMContentLoaded", function () {
 const targetDate = new Date("November 2, 2024 10:00:00").getTime();
 
 function updateCountdown() {
-  const now = new Date().getTime();
-  const timeRemaining = targetDate - now;
+  document.getElementById("countdown").innerHTML = "<h4>第１３回旭祭は終了しました！<br>来年のお越しもお待ちしております！</h4>";
+  // const now = new Date().getTime();
+  // const timeRemaining = targetDate - now;
 
-  const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  // const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  // const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  // const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  // const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-  document.querySelector("#countdown .days").textContent = days;
-  document.querySelector("#countdown .hours").textContent = hours;
-  document.querySelector("#countdown .minutes").textContent = minutes;
-  document.querySelector("#countdown .seconds").textContent = seconds;
+  // document.querySelector("#countdown .days").textContent = days;
+  // document.querySelector("#countdown .hours").textContent = hours;
+  // document.querySelector("#countdown .minutes").textContent = minutes;
+  // document.querySelector("#countdown .seconds").textContent = seconds;
 
-  if (timeRemaining < 0) {
-    document.getElementById("countdown").innerHTML = "旭祭が開催されました！";
-  }
+  // if (timeRemaining < 0) {
+  //   document.getElementById("countdown").innerHTML = "旭祭が開催されました！";
+  // }
 }
 
 // 1秒ごとにカウントダウンを更新
